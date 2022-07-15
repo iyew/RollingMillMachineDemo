@@ -923,7 +923,6 @@ GameObject:
   m_Component:
   - component: {fileID: 935720652}
   - component: {fileID: 935720651}
-  - component: {fileID: 935720650}
   m_Layer: 0
   m_Name: PanelCamera
   m_TagString: Untagged
@@ -931,14 +930,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &935720650
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935720649}
-  m_Enabled: 1
 --- !u!20 &935720651
 Camera:
   m_ObjectHideFlags: 0
@@ -11484,65 +11475,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
---- !u!1 &5105681237134178570 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5105681236853618847, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
-  m_PrefabInstance: {fileID: 5105681237134178569}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5105681237134178571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5105681237134178570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
-  _whenHover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorsCountUpdated:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectingInteractorsCountUpdated:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &5105681237134178572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5105681237134178570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 317e663e2bb60ea408fe22b908b59295, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _pointableElement: {fileID: 0}
-  _proximityField: {fileID: 0}
-  _surface: {fileID: 0}
-  _maxDistance: 0.1
-  _enterHoverDistance: 0
-  _releaseDistance: 0.25
-  _horizontalDragThreshold: 0
-  _verticalDragThreshold: 0
-  _volumeMask: {fileID: 0}
 --- !u!114 &5184404462868403048
 MonoBehaviour:
   m_ObjectHideFlags: 0
