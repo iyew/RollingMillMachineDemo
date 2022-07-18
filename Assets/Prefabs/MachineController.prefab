@@ -6276,7 +6276,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     ColorTime: 0.1
   _selectColorState:
-    Color: {r: 0.5019608, g: 1, b: 0.5019608, a: 1}
+    Color: {r: 0.49803922, g: 0.49803922, b: 1, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -7259,7 +7259,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     ColorTime: 0.1
   _selectColorState:
-    Color: {r: 0.5019608, g: 1, b: 0.5019608, a: 1}
+    Color: {r: 0.49803922, g: 0.49803922, b: 1, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -8371,7 +8371,7 @@ GameObject:
   - component: {fileID: 5105681236271006476}
   - component: {fileID: 5105681236271006477}
   - component: {fileID: 5105681236271006474}
-  - component: {fileID: 9108772767887887709}
+  - component: {fileID: 2162988396714204948}
   m_Layer: 0
   m_Name: WorkRollChangeFrame
   m_TagString: Untagged
@@ -8459,7 +8459,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &9108772767887887709
+--- !u!114 &2162988396714204948
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8473,10 +8473,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftButton: {fileID: 5105681236803239986}
   rightButton: {fileID: 5105681237939601079}
-  greenActivate: {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
-  greenDeactivate: {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
-  redActivate: {fileID: 2100000, guid: 159d18b39ad32414e8fcfa2367b4452b, type: 2}
-  redDeactivate: {fileID: 2100000, guid: 990cbd0db662de746874c0a767f7d960, type: 2}
   isActivated: 1
 --- !u!1 &5105681236288456154
 GameObject:
@@ -9615,7 +9611,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 990cbd0db662de746874c0a767f7d960, type: 2}
+  - {fileID: 2100000, guid: 159d18b39ad32414e8fcfa2367b4452b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9777,7 +9773,7 @@ MonoBehaviour:
   _editor: {fileID: 3356023284176852298}
   _colorShaderPropertyName: _Color
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.49803922, g: 0, b: 0, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -9869,7 +9865,7 @@ GameObject:
   - component: {fileID: 5105681236601511226}
   - component: {fileID: 5105681236601511227}
   - component: {fileID: 5105681236601511224}
-  - component: {fileID: 1044378519967181787}
+  - component: {fileID: 4350119397326733088}
   m_Layer: 0
   m_Name: SpindleSupportFrame
   m_TagString: Untagged
@@ -9957,7 +9953,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1044378519967181787
+--- !u!114 &4350119397326733088
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9971,10 +9967,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftButton: {fileID: 5105681236677088873}
   rightButton: {fileID: 5105681236509597681}
-  greenActivate: {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
-  greenDeactivate: {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
-  redActivate: {fileID: 2100000, guid: 159d18b39ad32414e8fcfa2367b4452b, type: 2}
-  redDeactivate: {fileID: 2100000, guid: 990cbd0db662de746874c0a767f7d960, type: 2}
   isActivated: 0
 --- !u!1 &5105681236606467041
 GameObject:
@@ -10386,7 +10378,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
+  - {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10548,7 +10540,7 @@ MonoBehaviour:
   _editor: {fileID: 7665859154779364345}
   _colorShaderPropertyName: _Color
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0, g: 0.49803922, b: 0, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -10737,7 +10729,7 @@ GameObject:
   - component: {fileID: 5105681236738955915}
   - component: {fileID: 5105681236738955912}
   - component: {fileID: 5105681236738955913}
-  - component: {fileID: 6646459295210172522}
+  - component: {fileID: 4846345123181572787}
   m_Layer: 0
   m_Name: BURBalanceFrame
   m_TagString: Untagged
@@ -10825,7 +10817,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &6646459295210172522
+--- !u!114 &4846345123181572787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10839,11 +10831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftButton: {fileID: 5105681237647707389}
   rightButton: {fileID: 5928144117292004285}
-  greenActivate: {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
-  greenDeactivate: {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
-  redActivate: {fileID: 2100000, guid: 159d18b39ad32414e8fcfa2367b4452b, type: 2}
-  redDeactivate: {fileID: 2100000, guid: 990cbd0db662de746874c0a767f7d960, type: 2}
-  isActivated: 0
+  isActivated: 1
 --- !u!1 &5105681236748618888
 GameObject:
   m_ObjectHideFlags: 0
@@ -10952,7 +10940,7 @@ GameObject:
   - component: {fileID: 5105681236750659539}
   - component: {fileID: 5105681236750659536}
   - component: {fileID: 5105681236750659537}
-  - component: {fileID: 297450308393896910}
+  - component: {fileID: 7381753974352020959}
   m_Layer: 0
   m_Name: WorkRollChockFrame
   m_TagString: Untagged
@@ -11040,7 +11028,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &297450308393896910
+--- !u!114 &7381753974352020959
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11054,10 +11042,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftButton: {fileID: 5105681237621734441}
   rightButton: {fileID: 5105681237732766817}
-  greenActivate: {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
-  greenDeactivate: {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
-  redActivate: {fileID: 2100000, guid: 990cbd0db662de746874c0a767f7d960, type: 2}
-  redDeactivate: {fileID: 0}
   isActivated: 1
 --- !u!1 &5105681236776836748
 GameObject:
@@ -11467,7 +11451,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
+  - {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11629,7 +11613,7 @@ MonoBehaviour:
   _editor: {fileID: 4693051935249317243}
   _colorShaderPropertyName: _Color
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0, g: 0.49803922, b: 0, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -11777,7 +11761,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 990cbd0db662de746874c0a767f7d960, type: 2}
+  - {fileID: 2100000, guid: 159d18b39ad32414e8fcfa2367b4452b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11939,7 +11923,7 @@ MonoBehaviour:
   _editor: {fileID: 324707072472761139}
   _colorShaderPropertyName: _Color
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.49803922, g: 0, b: 0, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -12962,7 +12946,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
+  - {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13124,7 +13108,7 @@ MonoBehaviour:
   _editor: {fileID: 4316889571706386638}
   _colorShaderPropertyName: _Color
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0, g: 0.49803922, b: 0, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -13386,7 +13370,7 @@ GameObject:
   - component: {fileID: 5105681237121153285}
   - component: {fileID: 5105681237121153282}
   - component: {fileID: 5105681237121153283}
-  - component: {fileID: 7266873039549738717}
+  - component: {fileID: 6613637916123012703}
   m_Layer: 0
   m_Name: WorkRollBalanceFrame
   m_TagString: Untagged
@@ -13474,7 +13458,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &7266873039549738717
+--- !u!114 &6613637916123012703
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13488,11 +13472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftButton: {fileID: 5105681237385357618}
   rightButton: {fileID: 5105681236826409655}
-  greenActivate: {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
-  greenDeactivate: {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
-  redActivate: {fileID: 2100000, guid: 159d18b39ad32414e8fcfa2367b4452b, type: 2}
-  redDeactivate: {fileID: 2100000, guid: 990cbd0db662de746874c0a767f7d960, type: 2}
-  isActivated: 1
+  isActivated: 0
 --- !u!1 &5105681237138626385
 GameObject:
   m_ObjectHideFlags: 0
@@ -14565,7 +14545,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
+  - {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14727,7 +14707,7 @@ MonoBehaviour:
   _editor: {fileID: 6836285585767827503}
   _colorShaderPropertyName: _Color
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0, g: 0.49803922, b: 0, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -15654,7 +15634,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 990cbd0db662de746874c0a767f7d960, type: 2}
+  - {fileID: 2100000, guid: 159d18b39ad32414e8fcfa2367b4452b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15816,7 +15796,7 @@ MonoBehaviour:
   _editor: {fileID: 4655476549537628052}
   _colorShaderPropertyName: _Color
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.49803922, g: 0, b: 0, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -15964,7 +15944,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
+  - {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16126,7 +16106,7 @@ MonoBehaviour:
   _editor: {fileID: 6438056630968584805}
   _colorShaderPropertyName: _Color
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0, g: 0.49803922, b: 0, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -16274,7 +16254,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
+  - {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16436,7 +16416,7 @@ MonoBehaviour:
   _editor: {fileID: 5153091486163021889}
   _colorShaderPropertyName: _Color
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0, g: 0.49803922, b: 0, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -17096,7 +17076,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 990cbd0db662de746874c0a767f7d960, type: 2}
+  - {fileID: 2100000, guid: 159d18b39ad32414e8fcfa2367b4452b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17258,7 +17238,7 @@ MonoBehaviour:
   _editor: {fileID: 1534220962048675467}
   _colorShaderPropertyName: _Color
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.49803922, g: 0, b: 0, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -18217,7 +18197,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 990cbd0db662de746874c0a767f7d960, type: 2}
+  - {fileID: 2100000, guid: 159d18b39ad32414e8fcfa2367b4452b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18379,7 +18359,7 @@ MonoBehaviour:
   _editor: {fileID: 8876430783324890071}
   _colorShaderPropertyName: _Color
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.49803922, g: 0, b: 0, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -20369,7 +20349,7 @@ GameObject:
   - component: {fileID: 5105681238107055842}
   - component: {fileID: 5105681238107055843}
   - component: {fileID: 5105681238107055840}
-  - component: {fileID: 877542231007444716}
+  - component: {fileID: 5594054519535701607}
   m_Layer: 0
   m_Name: BURChockFrame
   m_TagString: Untagged
@@ -20457,7 +20437,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &877542231007444716
+--- !u!114 &5594054519535701607
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20471,11 +20451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftButton: {fileID: 5105681237069209730}
   rightButton: {fileID: 5105681237573091532}
-  greenActivate: {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
-  greenDeactivate: {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
-  redActivate: {fileID: 2100000, guid: 159d18b39ad32414e8fcfa2367b4452b, type: 2}
-  redDeactivate: {fileID: 2100000, guid: 990cbd0db662de746874c0a767f7d960, type: 2}
-  isActivated: 0
+  isActivated: 1
 --- !u!1 &5105681238109588643
 GameObject:
   m_ObjectHideFlags: 0
@@ -21049,7 +21025,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4056d3ba31e236d449d80b07700ef986, type: 2}
+  - {fileID: 2100000, guid: be03831696350da43b17a4d3fb8d8ced, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22619,7 +22595,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     ColorTime: 0.1
   _selectColorState:
-    Color: {r: 0.5019608, g: 1, b: 0.5019608, a: 1}
+    Color: {r: 0.49803922, g: 0.49803922, b: 1, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -23015,7 +22991,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 990cbd0db662de746874c0a767f7d960, type: 2}
+  - {fileID: 2100000, guid: 159d18b39ad32414e8fcfa2367b4452b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23177,7 +23153,7 @@ MonoBehaviour:
   _editor: {fileID: 6376914805051841673}
   _colorShaderPropertyName: _Color
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.49803922, g: 0, b: 0, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -24872,7 +24848,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     ColorTime: 0.1
   _selectColorState:
-    Color: {r: 0.5019608, g: 1, b: 0.5019608, a: 1}
+    Color: {r: 0.49803922, g: 0.49803922, b: 1, a: 1}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
