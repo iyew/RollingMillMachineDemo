@@ -23,6 +23,7 @@ namespace Oculus.Interaction
     /// </summary>
     public class OneGrabRotateTransformer : MonoBehaviour, ITransformer
     {
+        public float angleDelta;
         public enum Axis
         {
             Right = 0,
@@ -96,7 +97,7 @@ namespace Oculus.Interaction
 
             // Shortest angle between two planar vectors is the angle about the axis
             // Because we know the vectors are planar, we derive the sign ourselves
-            float angleDelta = Vector3.Angle(initialVector, targetVector);
+            angleDelta = Vector3.Angle(initialVector, targetVector);
             angleDelta *= Vector3.Dot(Vector3.Cross(initialVector, targetVector), rotationAxis) > 0.0f ? 1.0f : -1.0f;
 
             float previousAngle = _constrainedRelativeAngle;
