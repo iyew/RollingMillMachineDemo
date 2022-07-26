@@ -24,6 +24,8 @@ namespace Oculus.Interaction
     public class OneGrabRotateTransformer : MonoBehaviour, ITransformer
     {
         public float angleDelta;
+        public float constraints;
+       
         public enum Axis
         {
             Right = 0,
@@ -61,7 +63,8 @@ namespace Oculus.Interaction
         }
 
         private float _relativeAngle = 0.0f;
-        private float _constrainedRelativeAngle = 0.0f;
+        private float _constrainedRelativeAngle;
+        
 
         private IGrabbable _grabbable;
 
@@ -107,11 +110,13 @@ namespace Oculus.Interaction
             if (_constraints.MinAngle.Constrain)
             {
                 _constrainedRelativeAngle = Mathf.Max(_constrainedRelativeAngle, _constraints.MinAngle.Value);
+                Debug.Log($"MIN : {_constrainedRelativeAngle}");
             }
 
             if (_constraints.MaxAngle.Constrain)
             {
                 _constrainedRelativeAngle = Mathf.Min(_constrainedRelativeAngle, _constraints.MaxAngle.Value);
+                 Debug.Log($"MAX : {_constrainedRelativeAngle}");
             }
 
             angleDelta = _constrainedRelativeAngle - previousAngle;

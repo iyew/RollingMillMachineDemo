@@ -758,6 +758,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tutorial Pannel
       objectReference: {fileID: 0}
+    - target: {fileID: 6508488319253469728, guid: f0cddc41d09321041afa0e78ca66d52d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0cddc41d09321041afa0e78ca66d52d, type: 3}
 --- !u!1 &652516401
@@ -11938,9 +11942,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7947261677229778685, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
-      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      propertyPath: _whenMove.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7947261677229778685, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947261677229778685, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenMove.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947261677229778685, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenMove.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1364277232}
     - target: {fileID: 7947261677229778685, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
@@ -11950,6 +11966,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1364277232}
     - target: {fileID: 7947261677229778685, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenMove.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947261677229778685, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenMove.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: vibrationTri
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947261677229778685, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -11958,12 +11982,24 @@ PrefabInstance:
       value: vibrationTri
       objectReference: {fileID: 0}
     - target: {fileID: 7947261677229778685, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenMove.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: VibrationTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947261677229778685, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: VibrationTrigger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7947261677229778685, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenMove.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947261677229778685, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8172296802628502303, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _constraints.MinAngle.Constrain
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
