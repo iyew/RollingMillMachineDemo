@@ -13,17 +13,17 @@ public class Lever : MonoBehaviour
     {
         if (other.CompareTag("Forward"))
         {
-            Debug.Log("_whenForward");
+            //Debug.Log("_whenForward");
             _whenForward.Invoke();
         }
         if (other.CompareTag("Reverse"))
         {
-            Debug.Log("_whenReverse");
+            //Debug.Log("_whenReverse");
             _whenReverse.Invoke();
         }
         if (other.CompareTag("Stop"))
         {
-            Debug.Log("_whenStop");
+            //Debug.Log("_whenStop");
             _whenStop.Invoke();
         }
     }
