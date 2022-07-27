@@ -1925,6 +1925,24 @@ Transform:
   m_Father: {fileID: 1584299529}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2039705090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6664549302549961001, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+  m_PrefabInstance: {fileID: 5105681237134178569}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2039705091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039705090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9535d065eeb1a9848967525af404c755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: -1
 --- !u!114 &30866661604774446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11901,6 +11919,34 @@ PrefabInstance:
       propertyPath: _whenReverse.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7871692389860750458, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871692389860750458, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871692389860750458, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2039705091}
+    - target: {fileID: 7871692389860750458, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871692389860750458, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: vibrationTri
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871692389860750458, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: VibrationTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871692389860750458, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
 --- !u!114 &5184404462868403048
@@ -14083,6 +14129,7 @@ GameObject:
   - component: {fileID: 7079690332674253262}
   - component: {fileID: 7194126627616454282}
   - component: {fileID: 9171181915636383835}
+  - component: {fileID: 7079690332668728363}
   m_Layer: 0
   m_Name: OVRCameraRig
   m_TagString: Untagged
@@ -14090,6 +14137,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7079690332668728363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7079690332668728362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2b60ae9dfa05b4c9984f34d096bb2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedFoward: 2
+  speedSide: 2
 --- !u!1 &7079690332668728364
 GameObject:
   m_ObjectHideFlags: 0

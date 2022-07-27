@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Monitoring : MonoBehaviour
 {
-    public int speedFoward = 12; // 전진속도
-    public int speedSide = 6; // 옆걸음 속도
+    public int speedFoward = 2; // 전진속도
+    public int speedSide = 2; // 옆걸음 속도
 
     private Transform tr; // 플레이어 트랜스폼
     private float dirX = 0;
