@@ -36,13 +36,13 @@ public class BURCylinder : MonoBehaviour
         target = this.transform;
     }
 
-    public void Out()
+    public void Clamp()
     {
         backUpRoll.SetParent(this.transform);
     }
 
-    public void In()
+    public void UnClamp()
     {
-        backUpRoll.SetParent(this.transform);
+        backUpRoll.SetParent(null);
     }
 }
