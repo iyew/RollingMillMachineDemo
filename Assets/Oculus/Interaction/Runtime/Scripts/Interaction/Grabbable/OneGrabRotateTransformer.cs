@@ -126,6 +126,8 @@ namespace Oculus.Interaction
             targetTransform.RotateAround(pivot.position, rotationAxis, angleDelta);
 
             _previousGrabPose = grabPoint;
+
+            
         }
 
         public void EndTransform() 
@@ -149,31 +151,33 @@ namespace Oculus.Interaction
             
             float k = _constrainedRelativeAngle;
             
-            
-            if((k <90 && k >45) )
+            if (-20 <= k && k <= 20)
+            {
+                x = -k;
+                targetTransform.RotateAround(pivot.position, rotationAxis,x);
+                _constrainedRelativeAngle = 0 ;
+            }
+            else if (20 < k && k < 60)
+            {
+                x = 45.0f - k;
+                targetTransform.RotateAround(pivot.position, rotationAxis,x);
+                _constrainedRelativeAngle = 45;
+            }
+            else if(-60 < k && k < -20)
+            {
+                x = -45.0f - k;
+                targetTransform.RotateAround(pivot.position, rotationAxis,x);
+                _constrainedRelativeAngle = -45 ;   
+            }
+            else if(60 <= k && k <= 90)
             {
                 x = 90.0f - k;
                 targetTransform.RotateAround(pivot.position, rotationAxis,x);
-                _constrainedRelativeAngle = 90;
+                _constrainedRelativeAngle = 90 ;
             }
-
-            else if((k<45 && k >0) )
+            else if(-90 <= k && k <= -60)
             {
-                x = -k;
-                targetTransform.RotateAround(pivot.position, rotationAxis,x);
-                _constrainedRelativeAngle = 0 ;
-            }
-            
-            else if((k<0 && k>-45) )
-            {
-                x = -k;
-                targetTransform.RotateAround(pivot.position, rotationAxis,x);
-                _constrainedRelativeAngle = 0 ;
-            }
-
-            else if((k<-45 && k>-90))
-            {
-                x = -90.0f -k;
+                x = -90.0f - k;
                 targetTransform.RotateAround(pivot.position, rotationAxis,x);
                 _constrainedRelativeAngle = -90 ;
             }

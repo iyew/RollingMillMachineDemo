@@ -1,0 +1,50 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BabyCar : MonoBehaviour
+{
+    public Transform forward, reverse;
+    public Transform workRollTop, workRollBottom;
+    private Transform target;
+    private float speed;
+
+    protected void Start()
+    {
+        target = transform;
+        speed = 2.0f;
+    }
+
+    protected void Update()
+    {
+        float step = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+    }
+
+    public void Forward()
+    {
+        target = forward;
+    }
+
+    public void Reverse()
+    {
+        target = reverse;
+    }
+
+    public void Stop()
+    {
+        target = this.transform;
+    }
+
+    public void Clamp()
+    {
+        workRollTop.SetParent(this.transform);
+        workRollBottom.SetParent(this.transform);
+    }
+
+    public void UnClamp()
+    {
+        workRollTop.SetParent(null);
+        workRollBottom.SetParent(null);
+    }
+}
