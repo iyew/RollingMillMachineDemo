@@ -1820,13 +1820,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376708363}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.09330109, y: 0.83057845, z: -0.14645337, w: 0.5291368}
+  m_LocalPosition: {x: 0, y: 2, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1522138144}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20, y: 115, z: 0}
 --- !u!1 &1522138143
 GameObject:
   m_ObjectHideFlags: 0
@@ -13124,7 +13124,7 @@ PrefabInstance:
     - target: {fileID: 7231208019452130122, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenStop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1206715583}
     - target: {fileID: 7231208019452130122, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenStop.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -13148,7 +13148,7 @@ PrefabInstance:
     - target: {fileID: 7231208019452130122, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenForward.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1206715583}
     - target: {fileID: 7231208019452130122, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenForward.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -13156,7 +13156,7 @@ PrefabInstance:
     - target: {fileID: 7231208019452130122, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenReverse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1206715583}
     - target: {fileID: 7231208019452130122, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenReverse.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -13211,7 +13211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7231208019452130122, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenStop.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Car, Assembly-CSharp
+      value: BabyCar, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7231208019452130122, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenStop.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -13219,7 +13219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7231208019452130122, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenForward.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Car, Assembly-CSharp
+      value: BabyCar, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7231208019452130122, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenForward.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -13227,7 +13227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7231208019452130122, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenReverse.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Car, Assembly-CSharp
+      value: BabyCar, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7231208019452130122, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
       propertyPath: _whenReverse.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
