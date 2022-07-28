@@ -25,6 +25,7 @@ namespace Oculus.Interaction
     {
         public float angleDelta;
         public float constraints;
+        
        
         public enum Axis
         {
@@ -110,15 +111,15 @@ namespace Oculus.Interaction
             if (_constraints.MinAngle.Constrain)
             {
                 _constrainedRelativeAngle = Mathf.Max(_constrainedRelativeAngle, _constraints.MinAngle.Value);
-                Debug.Log($"MIN : {_constrainedRelativeAngle}");
+                
             }
 
             if (_constraints.MaxAngle.Constrain)
             {
                 _constrainedRelativeAngle = Mathf.Min(_constrainedRelativeAngle, _constraints.MaxAngle.Value);
-                 Debug.Log($"MAX : {_constrainedRelativeAngle}");
+                
             }
-
+            
             angleDelta = _constrainedRelativeAngle - previousAngle;
 
             // Apply this angle rotation about the axis to our transform
@@ -127,7 +128,63 @@ namespace Oculus.Interaction
             _previousGrabPose = grabPoint;
         }
 
-        public void EndTransform() { }
+        public void EndTransform() 
+        { 
+            var grabPoint = _grabbable.GrabPoints[0];
+            var targetTransform = _grabbable.Transform;
+
+            Transform pivot = _pivotTransform != null ? _pivotTransform : targetTransform;
+            Vector3 worldAxis = Vector3.zero;
+            worldAxis[(int)_rotationAxis] = 1f;
+            Vector3 rotationAxis = pivot.TransformDirection(worldAxis);
+
+            // Project our positional offsets onto a plane with normal equal to the rotation axis
+            Vector3 initialOffset = _previousGrabPose.position - pivot.position;
+            Vector3 initialVector = Vector3.ProjectOnPlane(initialOffset, rotationAxis);
+
+            Vector3 targetOffset = grabPoint.position - pivot.position;
+            Vector3 targetVector = Vector3.ProjectOnPlane(targetOffset, rotationAxis);
+
+            float x = 0;
+            
+            float k = _constrainedRelativeAngle;
+            
+            
+            if((k <90 && k >45) )
+            {
+                x = 90.0f - k;
+                targetTransform.RotateAround(pivot.position, rotationAxis,x);
+                _constrainedRelativeAngle = 90;
+            }
+
+            else if((k<45 && k >0) )
+            {
+                x = -k;
+                targetTransform.RotateAround(pivot.position, rotationAxis,x);
+                _constrainedRelativeAngle = 0 ;
+            }
+            
+            else if((k<0 && k>-45) )
+            {
+                x = -k;
+                targetTransform.RotateAround(pivot.position, rotationAxis,x);
+                _constrainedRelativeAngle = 0 ;
+            }
+
+            else if((k<-45 && k>-90))
+            {
+                x = -90.0f -k;
+                targetTransform.RotateAround(pivot.position, rotationAxis,x);
+                _constrainedRelativeAngle = -90 ;
+            }
+            
+        
+           
+        
+            
+            
+
+        }
 
         #region Inject
 
