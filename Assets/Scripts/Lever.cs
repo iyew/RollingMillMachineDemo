@@ -8,7 +8,7 @@ public class Lever : MonoBehaviour
     [SerializeField] private UnityEvent _whenForward;
     [SerializeField] private UnityEvent _whenReverse;
     [SerializeField] private UnityEvent _whenStop;
-    //[SerializeField] private UnityEvent _whenOut;
+    [SerializeField] private UnityEvent _whenOut;
     //[SerializeField] private UnityEvent _whenIn;
 
     private void OnTriggerStay(Collider other)
@@ -28,12 +28,12 @@ public class Lever : MonoBehaviour
             //Debug.Log("_whenStop");
             _whenStop.Invoke();
         }
-        /*
         if (other.CompareTag("Out"))
         {
             Debug.Log("_whenOut");
             _whenOut.Invoke();
         }
+        /*
         if (other.CompareTag("In"))
         {
             Debug.Log("_whenIn");

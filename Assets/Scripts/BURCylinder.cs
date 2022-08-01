@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BURCylinder : MonoBehaviour
 {
-    public Transform forward, reverse;
+    public Transform forward, reverse, _out;
     public Transform backUpRoll;
     private Transform target;
     private float speed;
@@ -34,6 +34,11 @@ public class BURCylinder : MonoBehaviour
     public void Stop()
     {
         target = this.transform;
+    }
+
+    public void Out()
+    {
+        target = _out;
     }
 
     public void Clamp()
