@@ -9,7 +9,7 @@ public class TXT_StepNUM : MonoBehaviour
     public TextMeshProUGUI txt_StepNum;
 
     void Update(){
-        StepNumber = GameObject.Find("Tutorial Pannel").GetComponent<EducationMode>().step;
+        StepNumber = GameObject.Find("Tutorial Pannel").GetComponent<Mode>().step;
         txt_StepNum.text="STEP:"+StepNumber;
     }
 }

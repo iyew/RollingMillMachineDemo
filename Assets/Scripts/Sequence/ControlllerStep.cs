@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ControlllerStep : MonoBehaviour
 {
+    public int num; 
     public const int Clamp   = 0;
     public const int UnClamp = 1;
     public const int Forward = 0;
@@ -21,33 +22,34 @@ public class ControlllerStep : MonoBehaviour
     public const int Babycar = 7;
 
     public int[] MenuState = new int[8];
+    public int action = 0;
 
     void Start(){
         for(int i = 0; i<8; i++) MenuState[i]=2;
     }
 
-    public void RFCyUp()  {MenuState[RFCy]= Up;}
-    public void RFCyDown(){MenuState[RFCy]= Down;}
+    public void RFCyUp()  {MenuState[RFCy]= Up;          num=0;  action=1;}
+    public void RFCyDown(){MenuState[RFCy]= Down;        num=0; action=1;}
 
-    public void WRBCyUp()  {MenuState[WRBCy]= Up;}
-    public void WRBCyDown(){MenuState[WRBCy]= Down;}
+    public void WRBCyUp()  {MenuState[WRBCy]= Up;        num=1; action=1;} 
+    public void WRBCyDown(){MenuState[WRBCy]= Down;      num=1; action=1;}
 
-    public void SpSupClamp()  {MenuState[SpSup]= Clamp;}
-    public void SpSupUnClamp(){MenuState[SpSup]= UnClamp;}
+    public void SpSupClamp()  {MenuState[SpSup]= Clamp;  num=2; action=1;}
+    public void SpSupUnClamp(){MenuState[SpSup]= UnClamp;num=2; action=1;}
     
-    public void WRChClamp()   {MenuState[WRCh]= Clamp;}
-    public void WRChUnClamp() {MenuState[WRCh]= UnClamp;}
+    public void WRChClamp()   {MenuState[WRCh]= Clamp;   num=3; action=1;}
+    public void WRChUnClamp() {MenuState[WRCh]= UnClamp; num=3; action=1;}
 
-    public void RCCForward()  {MenuState[RCC]= Forward;}
-    public void RCCBackward() {MenuState[RCC]= Reverse;}
+    public void RCCForward()  {MenuState[RCC]= Forward;  num=4; action=1;}
+    public void RCCBackward() {MenuState[RCC]= Reverse;  num=4; action=1;}
 
-    public void MomCarForward() {MenuState[MomCar]= Forward;}
-    public void MomCarBackward(){MenuState[MomCar]= Reverse;}
+    public void MomCarForward() {MenuState[MomCar]= Forward; num=5; action=1;}
+    public void MomCarBackward(){MenuState[MomCar]= Reverse; num=5; action=1;}
 
-    public void WRCClamp()  {MenuState[WRC]= Clamp;}
-    public void WRCUnClamp(){MenuState[WRC]= UnClamp;}
+    public void WRCClamp()  {MenuState[WRC]= Clamp;      num=6; action=1;}
+    public void WRCUnClamp(){MenuState[WRC]= UnClamp;    num=6; action=1;}
     
-    public void BabycarForward() {MenuState[Babycar]= Forward;}
-    public void BabycarBackward(){MenuState[Babycar]= Reverse;}
+    public void BabycarForward() {MenuState[Babycar]= Forward; num=7; action=1;}
+    public void BabycarBackward(){MenuState[Babycar]= Reverse; num=7; action=1;}
 
 }
