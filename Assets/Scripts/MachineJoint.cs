@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chock : MonoBehaviour
+public class MachineJoint : MonoBehaviour
 {
-    public Transform clamp, unclamp;
+    public Transform up, down;
     private Transform target;
     private float speed;
 
@@ -20,13 +20,13 @@ public class Chock : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target.position, step);
     }
 
-    public void Clamp()
+    public void Up()
     {
-        target = clamp;
+        target = up;
     }
 
-    public void UnClamp()
+    public void Down()
     {
-        target = unclamp;
+        target = down;
     }
 }

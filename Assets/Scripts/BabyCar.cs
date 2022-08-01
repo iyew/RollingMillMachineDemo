@@ -12,7 +12,7 @@ public class BabyCar : MonoBehaviour
     protected void Start()
     {
         target = transform;
-        speed = 2.0f;
+        speed = 1.5f;
     }
 
     protected void Update()
@@ -45,11 +45,15 @@ public class BabyCar : MonoBehaviour
     {
         workRollTop.SetParent(this.transform);
         workRollBottom.SetParent(this.transform);
+        workRollTop.GetComponent<WorkRoll>().isBalanceDown = true;
+        workRollBottom.GetComponent<WorkRoll>().isBalanceDown = true;
     }
 
     public void UnClamp()
     {
         workRollTop.SetParent(null);
         workRollBottom.SetParent(null);
+        workRollTop.GetComponent<WorkRoll>().isBalanceDown = true;
+        workRollBottom.GetComponent<WorkRoll>().isBalanceDown = true;
     }
 }

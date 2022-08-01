@@ -30,7 +30,7 @@ public class Lever : MonoBehaviour
         }
         if (other.CompareTag("Out"))
         {
-            Debug.Log("_whenOut");
+            //Debug.Log("_whenOut");
             _whenOut.Invoke();
         }
         /*

@@ -11,7 +11,7 @@ public class Car : MonoBehaviour
     protected void Start()
     {
         target = transform;
-        speed = 2.0f;
+        speed = 1.5f;
     }
 
     protected void Update()

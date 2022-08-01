@@ -5,14 +5,14 @@ using UnityEngine;
 public class BURCylinder : MonoBehaviour
 {
     public Transform forward, reverse, _out;
-    public Transform backUpRoll;
+    public Transform backUpRollBottom;
     private Transform target;
     private float speed;
 
     protected void Start()
     {
         target = transform;
-        speed = 2.0f;
+        speed = 1.5f;
     }
 
     protected void Update()
@@ -43,11 +43,13 @@ public class BURCylinder : MonoBehaviour
 
     public void Clamp()
     {
-        backUpRoll.SetParent(this.transform);
+        backUpRollBottom.SetParent(this.transform);
+        backUpRollBottom.GetComponent<BackUpRoll>().isBalanceDown = true;
     }
 
     public void UnClamp()
     {
-        backUpRoll.SetParent(null);
+        backUpRollBottom.SetParent(null);
+        backUpRollBottom.GetComponent<BackUpRoll>().isBalanceDown = true;
     }
 }
