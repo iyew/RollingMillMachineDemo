@@ -8,11 +8,18 @@ public class ButtonController : MonoBehaviour
     public GameObject leftButton, rightButton;
     public bool isActivated;
     private InteractableColorVisual.ColorState leftColorState, rightColorState;
+    private Color greenOn, greenOff, redOn, redOff;
 
     void Start()
     {
         leftColorState = new InteractableColorVisual.ColorState();
         rightColorState = new InteractableColorVisual.ColorState();
+
+        greenOn = new Color(0, 255, 0, 255);
+        greenOff = new Color(0, 127, 0, 127);
+        redOn = new Color(255, 0, 0, 255);
+        redOff = new Color(127, 0, 0, 127);
+        
         Toggle();
     }
 
@@ -23,20 +30,20 @@ public class ButtonController : MonoBehaviour
 
         if (isActivated)
         {
-            leftColorState.Color = new Color(0, 255, 0, 255);
+            leftColorState.Color = greenOn;
             leftLED.InjectOptionalNormalColorState(leftColorState);
 
-            rightColorState.Color = new Color(127, 0, 0, 127);
+            rightColorState.Color = redOff;
             rightLED.InjectOptionalNormalColorState(rightColorState);
 
             isActivated = false;
         }
         else
         {
-            leftColorState.Color = new Color(0, 127, 0, 127);
+            leftColorState.Color = greenOff;
             leftLED.InjectOptionalNormalColorState(leftColorState);
 
-            rightColorState.Color = new Color(255, 0, 0, 255);
+            rightColorState.Color = redOn;
             rightLED.InjectOptionalNormalColorState(rightColorState);
 
             isActivated = true;
