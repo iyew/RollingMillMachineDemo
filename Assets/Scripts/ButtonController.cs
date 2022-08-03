@@ -7,36 +7,37 @@ public class ButtonController : MonoBehaviour
 {
     public GameObject leftButton, rightButton;
     public bool isActivated;
+    private InteractableColorVisual leftLED, rightLED;
     private InteractableColorVisual.ColorState leftColorState, rightColorState;
     private Color greenOn, greenOff, redOn, redOff;
 
-    void Start()
+    void Awake()
     {
+        leftLED = leftButton.GetComponent<InteractableColorVisual>();
+        rightLED = rightButton.GetComponent<InteractableColorVisual>();
+
         leftColorState = new InteractableColorVisual.ColorState();
         rightColorState = new InteractableColorVisual.ColorState();
+        //Debug.Log($"leftColorState: {leftColorState.Color}, {leftColorState.ColorCurve}, {leftColorState.ColorTime}");
 
-        greenOn = new Color(0, 255, 0, 255);
-        greenOff = new Color(0, 127, 0, 127);
-        redOn = new Color(255, 0, 0, 255);
-        redOff = new Color(127, 0, 0, 127);
+        greenOn = new Color(0, 1.0f, 0, 1.0f);
+        greenOff = new Color(0, 0.5f, 0, 0.5f);
+        redOn = new Color(1.0f, 0, 0, 1.0f);
+        redOff = new Color(0.5f, 0, 0, 0.5f);
         
         Toggle();
     }
 
     public void Toggle()
     {
-        var leftLED = leftButton.GetComponent<InteractableColorVisual>();
-        var rightLED = rightButton.GetComponent<InteractableColorVisual>();
-
         if (isActivated)
         {
             leftColorState.Color = greenOn;
+            //Debug.Log($"leftColorState: {leftColorState.Color}, {leftColorState.ColorCurve}, {leftColorState.ColorTime}");
             leftLED.InjectOptionalNormalColorState(leftColorState);
 
             rightColorState.Color = redOff;
             rightLED.InjectOptionalNormalColorState(rightColorState);
-
-            isActivated = false;
         }
         else
         {
@@ -45,8 +46,16 @@ public class ButtonController : MonoBehaviour
 
             rightColorState.Color = redOn;
             rightLED.InjectOptionalNormalColorState(rightColorState);
-
-            isActivated = true;
         }
+    }
+
+    public void setActivate()
+    {
+        isActivated = true;
+    }
+
+    public void setDeactivate()
+    {
+        isActivated = false;
     }
 }
