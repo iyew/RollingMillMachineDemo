@@ -11,7 +11,7 @@ public class Chock : MonoBehaviour
     protected void Start()
     {
         target = transform;
-        speed = 0.05f;
+        speed = 0.1f;
     }
 
     protected void Update()
