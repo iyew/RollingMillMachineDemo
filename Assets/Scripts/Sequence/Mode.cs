@@ -12,14 +12,15 @@ public class Mode : MonoBehaviour
    
   int[] EducationStep = new int[22];
   int[] state = new int[15];
-  int[] state_copy = new int[15];
+  public int[] state_copy = new int[15];
 
-  int Nume, Action, flag=0, sound_flag=1; 
+  public int Nume;
+  int Action, flag=0, sound_flag=1; 
   int sum = 0;
   private float time;
 
   void Start(){
-    step = 25;
+    step = 1;
     Environment_light.GetComponent<Light>().color = Color.white;
     for(int i = 0; i<15; i++) state_copy[i]=2;
   }
@@ -71,10 +72,11 @@ public class Mode : MonoBehaviour
         time +=Time.deltaTime;
         if(time<1.0f) {Environment_light.GetComponent<Light>().color = Color.red;}
         else {
-          //__________.CorrectState();
           machineController.GetComponent<ControlllerStep>().action=0; time = 0.0f; 
-          Environment_light.GetComponent<Light>().color = Color.white;  
+          Environment_light.GetComponent<Light>().color = Color.white;
+          Debug.Log(Nume+":"+state[Nume]+"->"+state_copy[Nume]);
           machineController.GetComponent<ControlllerStep>().State[Nume] = state_copy[Nume];
+          GameObject.Find("MachineController").GetComponent<NewBehaviourScript>().CorrectState();
           sound_flag = 1;
         } 
       }

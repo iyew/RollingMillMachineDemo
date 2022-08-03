@@ -38,8 +38,6 @@ public class ControlllerStep : MonoBehaviour
         action = 0;
         State = new int[15];
         for(int i=0; i<15; i++) State[i]=2;
-
-        Debug.Log(State.LongLength);
     }
 
     public void RFCyUp()         {State[RFCy]= Up;           num=0; action=1;}
@@ -85,7 +83,7 @@ public class ControlllerStep : MonoBehaviour
 
     public void ZigCraneMount()   {State[ZigCrane]= Mount;   num=13; action=1;}
     public void ZigCraneUnMount() {State[ZigCrane]= UnMOunt; num=13; action=1;}
-    
+
     public void BURCraneMount()   {State[BURCrane]= Mount;   num=14; action=1;}
     public void BURCraneUnMount() {State[BURCrane]= UnMOunt; num=14; action=1;}
 }

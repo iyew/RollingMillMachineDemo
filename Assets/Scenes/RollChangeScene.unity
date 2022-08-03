@@ -1906,7 +1906,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5517922789450376406, guid: 1b828b123020f38408535f16e1bbfffb, type: 3}
   m_PrefabInstance: {fileID: 1206715581}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2078255801}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc050ce38eb15ea468d2e808166f958e, type: 3}
@@ -2946,6 +2946,22 @@ MonoBehaviour:
   machineController: {fileID: 1766914550}
   Environment_light: {fileID: 1770049854}
   step: 0
+  state_copy: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  Nume: 0
+--- !u!114 &1766914554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766914550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b49a93e7aaa6484c8722ab84ca14803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  machineController: {fileID: 1766914550}
+  RollingMillmachine_RollchangeCar: {fileID: 2078255801}
 --- !u!1 &1770049854
 GameObject:
   m_ObjectHideFlags: 0
@@ -3173,6 +3189,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 949f5ce40ec189e44887830fd9addde8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2078255801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5424742353809583836, guid: 1b828b123020f38408535f16e1bbfffb, type: 3}
+  m_PrefabInstance: {fileID: 1206715581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &30866661604774446
 MonoBehaviour:
   m_ObjectHideFlags: 0
