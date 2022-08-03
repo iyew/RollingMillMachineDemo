@@ -27,9 +27,10 @@ public class Mode : MonoBehaviour
     state = machineController.GetComponent<ControlllerStep>().MenuState;
     Nume  = machineController.GetComponent<ControlllerStep>().num;
 
-    Debug.Log("step: "+ step + "state: "+state[Nume] + "Action: "+machineController.GetComponent<ControlllerStep>().action);
+    //Debug.Log("step: "+ step + "Action: "+machineController.GetComponent<ControlllerStep>().action);
 
     if(machineController.GetComponent<ControlllerStep>().action == 1){
+
       if(step==1 && state[ControlllerStep.RFCy]          == ControlllerStep.Down)     flag = 1;
       else if(step==2  && state[ControlllerStep.WRBCy]   == ControlllerStep.Down)     flag = 1;
       else if(step==3  && state[ControlllerStep.SpSup]   == ControlllerStep.Clamp)    flag = 1;
@@ -52,16 +53,20 @@ public class Mode : MonoBehaviour
       else if(step==19 && state[ControlllerStep.BURCC]   == ControlllerStep.Reverse)  flag = 1;
       else if(step==20 && state[ControlllerStep.RCC]     == ControlllerStep.Reverse)  flag = 1;
       else{
-        Debug.Log("Wrong!!!"+ Nume +":"+state[Nume]+"->"+state_copy[Nume]);
+        Debug.Log("You Put Wron Number: " + "num-"+ Nume +  "Movement-" + state[Nume]);
                 
         time +=Time.deltaTime;
         if(time<1.0f) {Environment_light.GetComponent<Light>().color = Color.red;}
-        else {machineController.GetComponent<ControlllerStep>().action=0; time = 0; Environment_light.GetComponent<Light>().color = Color.white;  state_copy = state;  state[Nume] = state_copy[Nume];} 
+        else {
+          machineController.GetComponent<ControlllerStep>().action=0; time = 0.0f; 
+          Environment_light.GetComponent<Light>().color = Color.white;  
+          machineController.GetComponent<ControlllerStep>().MenuState[Nume] = state_copy[Nume];
+          } 
       }
 
       if(flag == 1){
+        state_copy[Nume] = state[Nume]; step++; flag = 0; machineController.GetComponent<ControlllerStep>().action=0;
         Debug.Log(state[0]*10000000+state[1]*1000000+state[2]*100000+state[3]*10000+state[4]*1000+state[5]*100+state[6]*10+state[7]);
-        state_copy = state; step++; flag = 0; machineController.GetComponent<ControlllerStep>().action=0;
       }
     }
   }
