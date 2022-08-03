@@ -11,6 +11,9 @@ public class Lever : MonoBehaviour
     [SerializeField] private UnityEvent _whenOut;
     //[SerializeField] private UnityEvent _whenIn;
 
+    [SerializeField] private UnityEvent _whenFinishForward;
+    [SerializeField] private UnityEvent _whenFinishReverse;
+
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Forward"))
@@ -42,4 +45,22 @@ public class Lever : MonoBehaviour
         */
     }
 
+    public void FinishForward()
+    {
+        Debug.Log("Lever: _whenFinishForward");
+        _whenFinishForward.Invoke();
+    }
+
+    public void FinishReverse()
+    {
+        Debug.Log("Lever: _whenFinishReverse");
+        _whenFinishReverse.Invoke();
+    }
+
+    /*
+    public void Success()
+    {
+        Debug.Log("Success");
+    }
+    */
 }
