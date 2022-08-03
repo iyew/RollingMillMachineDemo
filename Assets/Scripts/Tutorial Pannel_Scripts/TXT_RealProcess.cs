@@ -19,17 +19,24 @@ public class TXT_RealProcess : MonoBehaviour
         "Work Roll Change Clamp",             //9.
         "Baby Car Reverse",                   //10.
         "Mother Car Reverse",                 //11.
-        "Roll Change Car Cylinder Out",       //12.
-        "Back Up Roll Chock Unclamp",         //13. Bottom Back Up Roll 취외
-        "Roll change Car IN",                 //14
-        "Back Up Roll Change Cylinder IN",    //15
-        "Back Up Roll Change OUT JOG\n: 하부 Back Up Roll 취외상태\nBottom Roll 위에 JIG설치 ",//16
-        "Back Up Roll Chock UnClamp",         //17
-        "Back up Roll Change In JOG",         //18. TOP Back UP Roll 취외
-        "Back Up Roll Balance DOWN",          //19
-        "Back Up Roll Change OUT",            //20
-        "Roll Cahnge Car Out",                //21
-        "Zig 보관대 이동 및 BUR 보관대 이동(수동)"  //22. Top Back up Roll 취외 및 설치 준비
+        "Roll Change Car  Out",               //12.
+        //Crane 해서 생긴 시퀀스
+        "W/R Change UnClamp",                 //13.
+        "+Baby Car Out",                      //14.(했다치고 아니고 물리적으로)
+        "Crane Button",                       //15.
+        ///////////////////////////////////////////
+        "Back Up Roll Chock Unclamp",         //16. +추가 된 부분 Bottom Back Up Roll 취외
+        "Back Up Roll Change Car IN",         //17
+        "Back Up Roll Change Cylinder IN",    //18
+        "BuR CHange Button Clamp",            //19 OUT JOG:
+        "BUR Change Lever Back",              //19 Out Jog
+        "Back Up Roll 취외상태\nBottom Roll 위에 JIG설치 ",//20. Button 추가 
+        "BuR Change lever Forward",           //21. Top Back Up Roll 취외 TOP Back UP Roll 취외
+        "Back Up Roll Balance DOWN",          //22.
+        "Back Up Roll Change OUT",            //23
+        "Roll Cahnge Car Out",                //24
+
+        "BuRCarane Button"                    //25. Top Back up Roll 취외 및 설치 준비
      };
      void Update(){
         step = GameObject.Find("Txt_stepNum").GetComponent<TXT_StepNUM>().StepNumber;
