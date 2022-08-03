@@ -20,7 +20,7 @@ public class StepChecker : MonoBehaviour
         {
             if (!isPassed)
             {
-                Debug.Log("StepChecker: _whenFinishForward");
+                // Debug.Log("StepChecker: _whenFinishForward");
                 isPassed = true;
                 _whenFinishForward.Invoke();
             }
@@ -29,7 +29,7 @@ public class StepChecker : MonoBehaviour
         {
             if (isPassed)
             {
-                Debug.Log("StepChecker: _whenFinishReverse");
+                // Debug.Log("StepChecker: _whenFinishReverse");
                 isPassed = false;
                 _whenFinishReverse.Invoke();
             }
