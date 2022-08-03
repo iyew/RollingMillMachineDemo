@@ -12745,6 +12745,12 @@ MonoBehaviour:
   _whenOut:
     m_PersistentCalls:
       m_Calls: []
+  _whenFinishForward:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenFinishReverse:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &3581025481395943135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14765,6 +14771,12 @@ MonoBehaviour:
   _whenOut:
     m_PersistentCalls:
       m_Calls: []
+  _whenFinishForward:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenFinishReverse:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8381222338706284388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16071,6 +16083,7 @@ GameObject:
   - component: {fileID: 5105681236271006476}
   - component: {fileID: 5105681236271006477}
   - component: {fileID: 5105681236271006474}
+  - component: {fileID: 7772072743603754537}
   m_Layer: 0
   m_Name: WorkRollChangeFrame
   m_TagString: Untagged
@@ -16158,6 +16171,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7772072743603754537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105681236271006472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b465782fb179849afddfc5c086de4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftButton: {fileID: 5105681236803239986}
+  rightButton: {fileID: 5105681237939601079}
+  isActivated: 0
 --- !u!1 &5105681236288456154
 GameObject:
   m_ObjectHideFlags: 0
@@ -17592,6 +17620,7 @@ GameObject:
   - component: {fileID: 5105681236601511226}
   - component: {fileID: 5105681236601511227}
   - component: {fileID: 5105681236601511224}
+  - component: {fileID: 4961375779700511697}
   m_Layer: 0
   m_Name: SpindleSupportFrame
   m_TagString: Untagged
@@ -17679,6 +17708,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &4961375779700511697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105681236601511206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b465782fb179849afddfc5c086de4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftButton: {fileID: 5105681236677088873}
+  rightButton: {fileID: 5105681236509597681}
+  isActivated: 0
 --- !u!1 &5105681236606467041
 GameObject:
   m_ObjectHideFlags: 0
@@ -18464,6 +18508,7 @@ GameObject:
   - component: {fileID: 5105681236738955915}
   - component: {fileID: 5105681236738955912}
   - component: {fileID: 5105681236738955913}
+  - component: {fileID: 660629230799664141}
   m_Layer: 0
   m_Name: BURBalanceFrame
   m_TagString: Untagged
@@ -18551,6 +18596,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &660629230799664141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105681236738955895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b465782fb179849afddfc5c086de4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftButton: {fileID: 5105681237647707389}
+  rightButton: {fileID: 5928144117292004285}
+  isActivated: 1
 --- !u!1 &5105681236748618888
 GameObject:
   m_ObjectHideFlags: 0
@@ -18563,6 +18623,7 @@ GameObject:
   - component: {fileID: 5105681236748618892}
   - component: {fileID: 5105681236748618893}
   - component: {fileID: 5105681236748618890}
+  - component: {fileID: 3360035303962365975}
   m_Layer: 0
   m_Name: CraneBackUpRollFrame
   m_TagString: Untagged
@@ -18650,6 +18711,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &3360035303962365975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105681236748618888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b465782fb179849afddfc5c086de4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftButton: {fileID: 6647388346742558543}
+  rightButton: {fileID: 1404219431443114757}
+  isActivated: 1
 --- !u!1 &5105681236750659551
 GameObject:
   m_ObjectHideFlags: 0
@@ -18662,6 +18738,7 @@ GameObject:
   - component: {fileID: 5105681236750659539}
   - component: {fileID: 5105681236750659536}
   - component: {fileID: 5105681236750659537}
+  - component: {fileID: 5780367679073745412}
   m_Layer: 0
   m_Name: WorkRollChockFrame
   m_TagString: Untagged
@@ -18749,6 +18826,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &5780367679073745412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105681236750659551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b465782fb179849afddfc5c086de4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftButton: {fileID: 5105681237621734441}
+  rightButton: {fileID: 5105681237732766817}
+  isActivated: 1
 --- !u!1 &5105681236776836748
 GameObject:
   m_ObjectHideFlags: 0
@@ -20536,6 +20628,7 @@ GameObject:
   - component: {fileID: 5105681237027678080}
   - component: {fileID: 5105681237027678081}
   - component: {fileID: 5105681237027678094}
+  - component: {fileID: 8204211419405648813}
   m_Layer: 0
   m_Name: RollForceCylinderFrame
   m_TagString: Untagged
@@ -20623,6 +20716,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &8204211419405648813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105681237027678092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b465782fb179849afddfc5c086de4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftButton: {fileID: 7040202847330971789}
+  rightButton: {fileID: 6916196923487253406}
+  isActivated: 1
 --- !u!1 &5105681237069209730
 GameObject:
   m_ObjectHideFlags: 0
@@ -21235,6 +21343,7 @@ GameObject:
   - component: {fileID: 5105681237121153285}
   - component: {fileID: 5105681237121153282}
   - component: {fileID: 5105681237121153283}
+  - component: {fileID: 4677791478382577975}
   m_Layer: 0
   m_Name: WorkRollBalanceFrame
   m_TagString: Untagged
@@ -21322,6 +21431,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &4677791478382577975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105681237121153281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b465782fb179849afddfc5c086de4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftButton: {fileID: 5105681237385357618}
+  rightButton: {fileID: 5105681236826409655}
+  isActivated: 1
 --- !u!1 &5105681237138626385
 GameObject:
   m_ObjectHideFlags: 0
@@ -21974,6 +22098,7 @@ GameObject:
   - component: {fileID: 5105681237205977028}
   - component: {fileID: 5105681237205977029}
   - component: {fileID: 5105681237205977026}
+  - component: {fileID: 662022092041007266}
   m_Layer: 0
   m_Name: BURChangeFrame
   m_TagString: Untagged
@@ -22061,6 +22186,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &662022092041007266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105681237205977024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b465782fb179849afddfc5c086de4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftButton: {fileID: 4602039234290210087}
+  rightButton: {fileID: 6612613016783613863}
+  isActivated: 0
 --- !u!1 &5105681237245063634
 GameObject:
   m_ObjectHideFlags: 0
@@ -28609,6 +28749,7 @@ GameObject:
   - component: {fileID: 5105681238107055842}
   - component: {fileID: 5105681238107055843}
   - component: {fileID: 5105681238107055840}
+  - component: {fileID: 3735647430423406050}
   m_Layer: 0
   m_Name: BURChockFrame
   m_TagString: Untagged
@@ -28696,6 +28837,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &3735647430423406050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105681238107055854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b465782fb179849afddfc5c086de4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftButton: {fileID: 5105681237069209730}
+  rightButton: {fileID: 5105681237573091532}
+  isActivated: 1
 --- !u!1 &5105681238109588643
 GameObject:
   m_ObjectHideFlags: 0
@@ -29861,6 +30017,7 @@ GameObject:
   - component: {fileID: 5105681238247244400}
   - component: {fileID: 5105681238247244401}
   - component: {fileID: 5105681238247244414}
+  - component: {fileID: 5704608227024474192}
   m_Layer: 0
   m_Name: CraneZigFrame
   m_TagString: Untagged
@@ -29948,6 +30105,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &5704608227024474192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105681238247244412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b465782fb179849afddfc5c086de4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftButton: {fileID: 1425556370412485410}
+  rightButton: {fileID: 4083594357187177178}
+  isActivated: 1
 --- !u!1 &5105681238271685406
 GameObject:
   m_ObjectHideFlags: 0
@@ -31002,6 +31174,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _whenOut:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenFinishForward:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenFinishReverse:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &4891407742751749569
@@ -35258,6 +35436,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _whenOut:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenFinishForward:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenFinishReverse:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &3952832542513449772

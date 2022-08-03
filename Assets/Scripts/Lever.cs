@@ -9,7 +9,7 @@ public class Lever : MonoBehaviour
     [SerializeField] private UnityEvent _whenReverse;
     [SerializeField] private UnityEvent _whenStop;
     [SerializeField] private UnityEvent _whenOut;
-    //[SerializeField] private UnityEvent _whenIn;
+    // [SerializeField] private UnityEvent _whenIn;
 
     [SerializeField] private UnityEvent _whenFinishForward;
     [SerializeField] private UnityEvent _whenFinishReverse;
@@ -18,22 +18,22 @@ public class Lever : MonoBehaviour
     {
         if (other.CompareTag("Forward"))
         {
-            //Debug.Log("_whenForward");
+            // Debug.Log("_whenForward");
             _whenForward.Invoke();
         }
         if (other.CompareTag("Reverse"))
         {
-            //Debug.Log("_whenReverse");
+            // Debug.Log("_whenReverse");
             _whenReverse.Invoke();
         }
         if (other.CompareTag("Stop"))
         {
-            //Debug.Log("_whenStop");
+            // Debug.Log("_whenStop");
             _whenStop.Invoke();
         }
         if (other.CompareTag("Out"))
         {
-            //Debug.Log("_whenOut");
+            // Debug.Log("_whenOut");
             _whenOut.Invoke();
         }
         /*
@@ -47,13 +47,13 @@ public class Lever : MonoBehaviour
 
     public void FinishForward()
     {
-        Debug.Log("Lever: _whenFinishForward");
+        // Debug.Log("Lever: _whenFinishForward");
         _whenFinishForward.Invoke();
     }
 
     public void FinishReverse()
     {
-        Debug.Log("Lever: _whenFinishReverse");
+        // Debug.Log("Lever: _whenFinishReverse");
         _whenFinishReverse.Invoke();
     }
 
