@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ControlllerStep : MonoBehaviour
-{    public int num; 
+{   public int num; 
     public const int Clamp   = 0;
     public const int UnClamp = 1;
     public const int Forward = 0;
@@ -19,16 +19,16 @@ public class ControlllerStep : MonoBehaviour
     public const int MomCar  = 5;
     public const int WRC     = 6;
     public const int Babycar = 7;
+    public const int BURCH   = 8;
+    public const int BURCC   = 9;
 
-    public int[] MenuState = new int[8];
-    public int action = 0;
+    public int[] MenuState;
+    public int action;
 
     void Start(){
-        for(int i = 0; i<8; i++) MenuState[i]=2;
-    }
-
-    void Update(){
-        if(this.GetComponent<Mode>().step == 1 && Input.GetKeyUp(KeyCode.Alpha1)){MenuState[RFCy]= Down; num = 0; action = 1;}
+        action = 0;
+        MenuState = new int[10];
+        for(int i=0; i<10; i++) MenuState[i]=2;
     }
 
     public void RFCyUp()  {MenuState[RFCy]= Up;                num=0; action=1;}
@@ -54,4 +54,10 @@ public class ControlllerStep : MonoBehaviour
     
     public void BabycarForward() {MenuState[Babycar]= Forward; num=7; action=1;}
     public void BabycarBackward(){MenuState[Babycar]= Reverse; num=7; action=1;}
+
+    public void BURCHClamp()     {MenuState[BURCH]=Clamp; num=8; action=1;}
+    public void BURCHUnClamp()   {MenuState[BURCH]=UnClamp; num=8; action=1;}
+
+    public void BURCCForward()  {MenuState[BURCC]= Forward; num=9; action=1;}
+    public void BURCCBackward() {MenuState[BURCC]= Reverse; num=9; action=1;}
 }
