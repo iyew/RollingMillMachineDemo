@@ -3014,6 +3014,8 @@ GameObject:
   - component: {fileID: 2436630183513891777}
   - component: {fileID: 4984220376963410723}
   - component: {fileID: 7547016862225848844}
+  - component: {fileID: 1544510210607982651}
+  - component: {fileID: 2684911490993272670}
   m_Layer: 0
   m_Name: BOX:1
   m_TagString: Untagged
@@ -3085,6 +3087,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &1544510210607982651
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404158583841105408}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &2684911490993272670
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404158583841105408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1000003, y: 0.2500001, z: 0.10000004}
+  m_Center: {x: -0.00000003223351, y: 0.0000002399087, z: 0.05}
 --- !u!1 &422183873353469245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4047,6 +4078,7 @@ GameObject:
   - component: {fileID: 1157229974949006200}
   - component: {fileID: 2527572464369776736}
   - component: {fileID: 141385440589424357}
+  - component: {fileID: 7948369610609314795}
   m_Layer: 0
   m_Name: BOX:1
   m_TagString: Untagged
@@ -4118,6 +4150,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7948369610609314795
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604831554673069489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1000003, y: 0.69500023, z: 0.30000007}
+  m_Center: {x: 0.7838807, y: 0.51338696, z: 0.14999996}
 --- !u!1 &614731895742066197
 GameObject:
   m_ObjectHideFlags: 0
@@ -7579,6 +7624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 833100837263866180}
   - component: {fileID: 7143812253891307748}
+  - component: {fileID: 5048911551006103178}
   m_Layer: 0
   m_Name: WorkRollTop
   m_TagString: Untagged
@@ -7618,6 +7664,24 @@ MonoBehaviour:
   up: {fileID: 2892597219416734366}
   down: {fileID: 2928614394163219811}
   isBalanceDown: 0
+--- !u!114 &5048911551006103178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226427112434782316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916691ffd11fded449cb653c44454628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 0}
+  cylinder: {fileID: 0}
+  x: 0
+  scaleBox: {fileID: 0}
+  upperCrane: {fileID: 0}
+  buttomWr: {fileID: 0}
 --- !u!1 &1230978064552177815
 GameObject:
   m_ObjectHideFlags: 0
@@ -23107,6 +23171,8 @@ GameObject:
   - component: {fileID: 6370853595296437971}
   - component: {fileID: 5734781772993351149}
   - component: {fileID: 2154409312177925454}
+  - component: {fileID: 8520382655739680243}
+  - component: {fileID: 1192300749670263519}
   m_Layer: 0
   m_Name: BOX:1
   m_TagString: Untagged
@@ -23178,6 +23244,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8520382655739680243
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539838513017432125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1000003, y: 0.2500001, z: 0.10000004}
+  m_Center: {x: 0.0000000025535527, y: -0.0000002399087, z: 0.05}
+--- !u!54 &1192300749670263519
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539838513017432125}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3546852272749627885
 GameObject:
   m_ObjectHideFlags: 0
@@ -29072,6 +29167,8 @@ GameObject:
   - component: {fileID: 4420801405325187563}
   - component: {fileID: 659570544038417122}
   - component: {fileID: 6038305602791185294}
+  - component: {fileID: 8310731156411389116}
+  - component: {fileID: 6998758618555269879}
   m_Layer: 0
   m_Name: BOX:1
   m_TagString: Untagged
@@ -29143,6 +29240,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8310731156411389116
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4598647311165631452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1000003, y: 0.69500023, z: 0.30000007}
+  m_Center: {x: 0.7838808, y: 0.51338744, z: 0.15000005}
+--- !u!114 &6998758618555269879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4598647311165631452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd92d33e64f218541b8b57822d50147c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBur: {fileID: 0}
+  zig: {fileID: 0}
 --- !u!1 &4626882311595911712
 GameObject:
   m_ObjectHideFlags: 0
@@ -36623,6 +36747,8 @@ GameObject:
   m_Component:
   - component: {fileID: 826497780297100657}
   - component: {fileID: 8672246052716499263}
+  - component: {fileID: 2414689699768738324}
+  - component: {fileID: 4558302260108455743}
   m_Layer: 0
   m_Name: BackUpRollTop
   m_TagString: Untagged
@@ -36662,6 +36788,36 @@ MonoBehaviour:
   up: {fileID: 1181092808282654187}
   down: {fileID: 7889944161202434671}
   isBalanceDown: 0
+--- !u!54 &2414689699768738324
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5697616339395982026}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &4558302260108455743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5697616339395982026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd92d33e64f218541b8b57822d50147c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBur: {fileID: 0}
+  zig: {fileID: 0}
 --- !u!1 &5725153386962770889
 GameObject:
   m_ObjectHideFlags: 0
@@ -59026,6 +59182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1646835201132276357}
   - component: {fileID: 3620995031954805670}
+  - component: {fileID: 7853725117149434871}
   m_Layer: 0
   m_Name: BackUpRollBottom
   m_TagString: Untagged
@@ -59065,6 +59222,22 @@ MonoBehaviour:
   up: {fileID: 1708423734185248018}
   down: {fileID: 3536998854852673}
   isBalanceDown: 0
+--- !u!54 &7853725117149434871
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8978899957271733509}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8994462925091955731
 GameObject:
   m_ObjectHideFlags: 0
@@ -59318,6 +59491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 503682058572333633}
   - component: {fileID: 2384758943811736588}
+  - component: {fileID: 2843420409368011502}
   m_Layer: 0
   m_Name: WorkRollBottom
   m_TagString: Untagged
@@ -59357,6 +59531,23 @@ MonoBehaviour:
   up: {fileID: 4588210512014305552}
   down: {fileID: 4234832618545101202}
   isBalanceDown: 0
+--- !u!114 &2843420409368011502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9009985460400349840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6866c5cb3351e4b41805fbf355c9e125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttomFlag: 0
+  buttomFlag2: 0
+  box: {fileID: 0}
+  cylinder: {fileID: 0}
+  topWr: {fileID: 0}
 --- !u!1 &9047398395804485591
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,21 +8,34 @@ public class BackUpRoll : MonoBehaviour
     private Transform target;
     public bool isBalanceDown;
     private float speed;
+    public int x;
+    public int topBurFlag;
+    public GameObject topBur;
 
-    protected void Start()
+    void Start()
     {
         target = transform;
         isBalanceDown = false;
         speed = 0.05f;
+        x = 0;
+        topBurFlag = 0;
     }
 
-    protected void Update()
+    void Update()
     {
+        topBurFlag = topBur.GetComponent<TopBurCollider>().y;
         if (!isBalanceDown)
         {
             float step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, target.position, step);
         }
+
+        if(topBurFlag == 1)
+        {
+            x = 2;
+        }
+
+        
     }
 
     public void Up()
@@ -32,6 +45,7 @@ public class BackUpRoll : MonoBehaviour
 
     public void Down()
     {
-        target = down;
+        //target = down;
+        x = 1;
     }
 }
