@@ -10,6 +10,7 @@ public class ZigCollisonTrigger : MonoBehaviour
     public int zigFlag;
     public int zigFlag2;
     public GameObject upper;
+    public Transform buttomBur;
     
     void Start(){
         zigFlag = 0;
@@ -26,7 +27,7 @@ public class ZigCollisonTrigger : MonoBehaviour
 
         else if(other.name == "BOX:1")
         {
-            zig.transform.SetParent(null);
+            zig.transform.SetParent(buttomBur);
             zigFlag2 = 1;
         }
     }
