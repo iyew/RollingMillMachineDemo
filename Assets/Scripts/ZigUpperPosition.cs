@@ -9,11 +9,14 @@ public class ZigUpperPosition : MonoBehaviour
     public GameObject zig;
     public GameObject cube;
     public GameObject cube2;
+    public int startFlag;
+    public GameObject buttomBur;
     
     
     void Start()
     {
         x= 0;
+        startFlag = 0;
     }
 
     // Update is called once per frame
@@ -81,8 +84,12 @@ public class ZigUpperPosition : MonoBehaviour
 
     }
 
-    void pressButton()
+    public void pressButton()
     {
+        startFlag = buttomBur.GetComponent<PublicBurPosition>().PositionFlag;
+        if(startFlag == 1)
+        {
         x = 1;
+        }
     }
 }

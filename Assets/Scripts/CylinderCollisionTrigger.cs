@@ -11,14 +11,20 @@ public class CylinderCollisionTrigger : MonoBehaviour
     public GameObject scaleBox;
     public GameObject upperCrane;
     public GameObject buttomWr;
+    public int startFlag;
     
     void Start()
     {
         x = 0;
+        startFlag = 0;
     }
-    void buttonPress()
+    public void buttonPress()
     {
+        startFlag = box.GetComponent<PublicPosition>().PositionFlag;
+        if(startFlag == 1)
+        {
         x = 1;
+        }
     }
 
     void OnTriggerEnter(Collider other)
