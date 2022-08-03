@@ -49,6 +49,7 @@ public class CylinderCollisionTrigger : MonoBehaviour
         var o2 = upperCrane.GetComponent<CraneUpperPosition>().upperFlag3;
         var p2 = buttomWr.GetComponent<WrButtomCollisionEvent>().buttomFlag2;
         var r3 = scaleBox.GetComponent<CraneCylinderScale>().t3;
+        var o3 = upperCrane.GetComponent<CraneUpperPosition>().upperFlag4;
 
 
         if(j == 1)
@@ -94,6 +95,11 @@ public class CylinderCollisionTrigger : MonoBehaviour
         else if(r3 == 1)
         {
             x = 12;
+        }
+
+        else if(o3 == 1)
+        {
+            x = 13;
         }
 
     }
