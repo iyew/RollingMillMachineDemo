@@ -25,7 +25,6 @@ namespace Oculus.Interaction
     {
         public float angleDelta;
         public float constraints;
-        
        
         public enum Axis
         {
@@ -64,12 +63,12 @@ namespace Oculus.Interaction
         }
 
         private float _relativeAngle = 0.0f;
-        private float _constrainedRelativeAngle;
+        public float _constrainedRelativeAngle;
         
 
-        private IGrabbable _grabbable;
+        public IGrabbable _grabbable;
 
-        private Pose _previousGrabPose;
+        public Pose _previousGrabPose;
 
         public void Initialize(IGrabbable grabbable)
         {
@@ -126,8 +125,6 @@ namespace Oculus.Interaction
             targetTransform.RotateAround(pivot.position, rotationAxis, angleDelta);
 
             _previousGrabPose = grabPoint;
-
-            
         }
 
         public void EndTransform() 
@@ -181,13 +178,6 @@ namespace Oculus.Interaction
                 targetTransform.RotateAround(pivot.position, rotationAxis,x);
                 _constrainedRelativeAngle = -90 ;
             }
-            
-        
-           
-        
-            
-            
-
         }
 
         #region Inject

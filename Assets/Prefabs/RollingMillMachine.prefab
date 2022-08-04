@@ -7682,6 +7682,7 @@ MonoBehaviour:
   scaleBox: {fileID: 0}
   upperCrane: {fileID: 0}
   buttomWr: {fileID: 0}
+  startFlag: 0
 --- !u!1 &1230978064552177815
 GameObject:
   m_ObjectHideFlags: 0
@@ -23776,7 +23777,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5094739110428386778}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &4064023910684639204
 BoxCollider:
@@ -29267,6 +29268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBur: {fileID: 0}
   zig: {fileID: 0}
+  y: 0
 --- !u!1 &4626882311595911712
 GameObject:
   m_ObjectHideFlags: 0
@@ -30956,6 +30958,7 @@ Transform:
   - {fileID: 3008702755804706822}
   - {fileID: 4745205989208369912}
   - {fileID: 8178379097481516034}
+  - {fileID: 2531513177425253257}
   - {fileID: 1854764344000033326}
   - {fileID: 300291739025561304}
   m_Father: {fileID: 7095051666261017269}
@@ -33433,7 +33436,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5094739110428386778}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &8537115468141846758
 BoxCollider:
@@ -36788,6 +36791,9 @@ MonoBehaviour:
   up: {fileID: 1181092808282654187}
   down: {fileID: 7889944161202434671}
   isBalanceDown: 0
+  x: 0
+  topBurFlag: 0
+  topBur: {fileID: 0}
 --- !u!54 &2414689699768738324
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36818,6 +36824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBur: {fileID: 0}
   zig: {fileID: 0}
+  y: 0
 --- !u!1 &5725153386962770889
 GameObject:
   m_ObjectHideFlags: 0
@@ -58980,6 +58987,50 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8936171268630193528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2531513177425253257}
+  - component: {fileID: 7315688274249619604}
+  m_Layer: 0
+  m_Name: BabyCarFinishOut
+  m_TagString: Out
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2531513177425253257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936171268630193528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10, y: 0, z: 0.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5094739110428386778}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7315688274249619604
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936171268630193528}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 1, z: 0.12}
+  m_Center: {x: 0.36, y: -0.88, z: -0.18}
 --- !u!1 &8941580979724169906
 GameObject:
   m_ObjectHideFlags: 0
@@ -59222,6 +59273,9 @@ MonoBehaviour:
   up: {fileID: 1708423734185248018}
   down: {fileID: 3536998854852673}
   isBalanceDown: 0
+  x: 0
+  topBurFlag: 0
+  topBur: {fileID: 0}
 --- !u!54 &7853725117149434871
 Rigidbody:
   m_ObjectHideFlags: 0
