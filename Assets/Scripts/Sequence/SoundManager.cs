@@ -6,6 +6,7 @@ public class SoundManager : MonoBehaviour
 {
    public AudioClip audioClip_Next;
    public AudioClip audioClip_Error;
+   public AudioClip audioClip_Finish;
    public AudioSource audioSource;
 
     public void play_Next(){
@@ -13,5 +14,8 @@ public class SoundManager : MonoBehaviour
     }
     public void play_Error(){
         audioSource.PlayOneShot(audioClip_Error);
+    }
+    public void play_Finish(){
+        audioSource.PlayOneShot(audioClip_Finish);
     }
 }
