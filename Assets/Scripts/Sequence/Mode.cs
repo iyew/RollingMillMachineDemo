@@ -10,9 +10,9 @@ public class Mode : MonoBehaviour
   public GameObject Environment_light;
   public int step;
    
-  int[] EducationStep = new int[22];
-  int[] state = new int[15];
-  public int[] state_copy = new int[15];
+  int[] EducationStep;
+  int[] state;
+  public int[] state_copy ;
 
   public int Nume;
   int Action, flag=0, sound_flag=1; 
@@ -20,7 +20,12 @@ public class Mode : MonoBehaviour
   private float time;
 
   void Start(){
-    step = 1;
+    step = 25;
+
+    EducationStep = new int[22];
+    state = new int[15];
+    state_copy = new int[15];
+
     Environment_light.GetComponent<Light>().color = Color.white;
     for(int i = 0; i<15; i++) state_copy[i]=2;
   }
