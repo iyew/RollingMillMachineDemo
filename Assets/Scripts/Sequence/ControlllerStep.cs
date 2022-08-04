@@ -39,7 +39,7 @@ public class ControlllerStep : MonoBehaviour
         State = new int[15];
         for(int i=0; i<15; i++) State[i]=2;
     }
-
+    public void LampTest()       {if(this.GetComponent<Mode>().step==0) this.GetComponent<Mode>().step++;}
     public void RFCyUp()         {State[RFCy]= Up;           num=0; action=1;}
     public void RFCyDown()       {State[RFCy]= Down;         num=0; action=1;}
 

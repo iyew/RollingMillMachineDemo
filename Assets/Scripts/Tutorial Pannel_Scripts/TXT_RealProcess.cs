@@ -8,6 +8,7 @@ public class TXT_RealProcess : MonoBehaviour
      public TextMeshProUGUI txt_RealProcess;
      int step;
      string[] process = new string[]{
+        "LED에 조명 들어오는지 확인",          //LampTest
         "Roll Force Cylinder Down",           //1. Roll Change 준비
         "Work Roll Balance Cylincder Down",   //2. Work Roll 취외
         "Spindle Support Clamp",              //3.
@@ -48,8 +49,8 @@ public class TXT_RealProcess : MonoBehaviour
      };
      void Update(){
         step = GameObject.Find("Txt_stepNum").GetComponent<TXT_StepNUM>().StepNumber;
-        if(step >= 1 && step<=26) txt_RealProcess.text=process[step-1];
-        else if(step == 27) txt_RealProcess.text="Finish~~!";
+        if(step >= 0 && step<29) txt_RealProcess.text=process[step];
+        else if(step == 29) txt_RealProcess.text="Finish~~!";
         else txt_RealProcess.text="NULL";
     }
     

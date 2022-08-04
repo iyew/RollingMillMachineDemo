@@ -20,7 +20,7 @@ public class Mode : MonoBehaviour
   private float time;
 
   void Start(){
-    step = 1;
+    step = 0;
 
     EducationStep = new int[22];
     state = new int[15];
@@ -71,7 +71,7 @@ public class Mode : MonoBehaviour
       else if(step==26 && state[ControlllerStep.BURCC]   == ControlllerStep.Reverse)  flag = 1;
       else if(step==27 && state[ControlllerStep.RCC]     == ControlllerStep.Reverse)  flag = 1;
       //Crane
-      else if(step==28 && state[ControlllerStep.BURCrane] == ControlllerStep.Mount)  {flag = 1; soundManager.play_Finish();}
+      else if(step==28 && state[ControlllerStep.BURCrane] == ControlllerStep.Mount)  {soundManager.play_Finish(); step++;}
       else{
         //Debug.Log("You Put Wron Number: " + "num-"+ Nume +  "Movement-" + state[Nume]);
         if(sound_flag==1)  {soundManager.play_Error(); sound_flag = 0;}

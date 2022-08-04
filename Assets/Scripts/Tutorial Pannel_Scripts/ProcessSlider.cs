@@ -7,8 +7,8 @@ public class ProcessSlider : MonoBehaviour
 {
     public Slider sliderA;
 
-    public int Step_Current= 1;
-    int Step_Full=20;
+    public int Step_Current= 0;
+    int Step_Full=29;
 
 
     void Update(){
