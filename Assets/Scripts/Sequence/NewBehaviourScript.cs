@@ -21,9 +21,5 @@ public class NewBehaviourScript : MonoBehaviour
         }
     }
 
-    public void Update(){
-        if(machineController.GetComponent<Mode>().step == 15){
-            RollingMillmachine_workrollTop.GetComponent<CylinderCollisionTrigger>().enabled = true;
-        }
-    }
+   
 }

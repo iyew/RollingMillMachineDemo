@@ -25508,8 +25508,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.013505886, y: 0.013156486, z: 0.04706238}
-  m_Center: {x: 0.0005746375, y: -0.0020408246, z: 3.5561292}
+  m_Size: {x: 0.013505886, y: 0.013156486, z: 0.024621}
+  m_Center: {x: 0.00057464483, y: -0.00204082, z: 3.5870285}
 --- !u!114 &29715608692204894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25522,6 +25522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd73c894a7ea75a48b09a2e9538d9ca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionFlag: 0
 --- !u!1 &3948181518119640330
 GameObject:
   m_ObjectHideFlags: 0
@@ -59053,6 +59054,11 @@ MonoBehaviour:
   reverse: {fileID: 7631551622017291787}
   _out: {fileID: 176963039928223701}
   backUpRollBottom: {fileID: 1646835201132276357}
+  flag: 0
+  burCylinder: {fileID: 0}
+  power: 0
+  collisionFlag: 0
+  cylinderChildren: {fileID: 0}
 --- !u!114 &7176177875103250836
 MonoBehaviour:
   m_ObjectHideFlags: 0

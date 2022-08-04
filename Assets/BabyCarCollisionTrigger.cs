@@ -13,7 +13,7 @@ public class BabyCarCollisionTrigger : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        if(other.name == "BackUpRollBottom")
+        if(other.name == "roll-s:1")
         {
             collisionFlag = 1;
         }
