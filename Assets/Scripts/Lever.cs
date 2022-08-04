@@ -74,7 +74,8 @@ namespace Oculus.Interaction
             // Debug.Log("Lever: _whenFinishReverse");
             _whenFinishOut.Invoke();
         }
-
+        
+        /*
         public void RevertLever()
         {
             transform.position = initStopPosition;
@@ -104,6 +105,7 @@ namespace Oculus.Interaction
                 GetComponent<OneGrabRotateTransformer>()._constrainedRelativeAngle = -90 ;
             }
         }
+        */
 
         /*
         public void Success()
