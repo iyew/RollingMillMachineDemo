@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ControlllerStep : MonoBehaviour
-{   public int num; 
+{        
+    public int num; 
     public const int Clamp   = 0;
     public const int UnClamp = 1;
     public const int Forward = 0;
@@ -27,8 +28,7 @@ public class ControlllerStep : MonoBehaviour
     public const int BURCC   = 11;
     public const int WRCrane = 12;  //Crane
     public const int ZigCrane= 13;
-    public const int BURCrane=14; 
-
+    public const int BURCrane=14;
 
     public int[] State;
     public int[] Crane;
