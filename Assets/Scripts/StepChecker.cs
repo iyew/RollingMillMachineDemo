@@ -7,6 +7,7 @@ public class StepChecker : MonoBehaviour
 {
     [SerializeField] private UnityEvent _whenFinishForward;
     [SerializeField] private UnityEvent _whenFinishReverse;
+    [SerializeField] private UnityEvent _whenFinishOut;
     private bool isPassed;
 
     protected void Start()
@@ -32,6 +33,15 @@ public class StepChecker : MonoBehaviour
                 // Debug.Log("StepChecker: _whenFinishReverse");
                 isPassed = false;
                 _whenFinishReverse.Invoke();
+            }
+        }
+        if (other.CompareTag("Out"))
+        {
+            if (!isPassed)
+            {
+                // Debug.Log("StepChecker: _whenFinishOut");
+                isPassed = true;
+                _whenFinishOut.Invoke();
             }
         }
     }
