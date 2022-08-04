@@ -9,7 +9,7 @@ public class ButtonPosition : MonoBehaviour
 
     void Start(){
         position = new float[5, 3]{
-        {-0.0767f, 0.8798f, 0.5686f}, //RollForceCylinder
+        {-0.0579999983f,0.879499972f,0.562399983f}, //RollForceCylinder
         {0.0747f, 0.8794f, 0.6808f}, //W/R Balance
         {-0.1504f, 0.8798f, 0.5686f}, //Spindle Supportc
         {0.1503f, 0.8794f, 0.63804f}, //W/R Chock
