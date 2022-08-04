@@ -20,7 +20,7 @@ public class Mode : MonoBehaviour
   private float time;
 
   void Start(){
-    step = 25;
+    step = 1;
 
     EducationStep = new int[22];
     state = new int[15];
