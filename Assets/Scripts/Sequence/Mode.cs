@@ -83,7 +83,6 @@ public class Mode : MonoBehaviour
           Environment_light.GetComponent<Light>().color = Color.white;
           Debug.Log(Nume+":"+state[Nume]+"->"+state_copy[Nume]);
           machineController.GetComponent<ControlllerStep>().State[Nume] = state_copy[Nume];
-          GameObject.Find("MachineController").GetComponent<NewBehaviourScript>().CorrectState();
           sound_flag = 1;
         } 
       }

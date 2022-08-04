@@ -1241,11 +1241,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!1 &716522215 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5424742353809583836, guid: 1b828b123020f38408535f16e1bbfffb, type: 3}
-  m_PrefabInstance: {fileID: 1206715581}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &725915591 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3735647430423406050, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}
@@ -2444,7 +2439,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5517922789450376406, guid: 1b828b123020f38408535f16e1bbfffb, type: 3}
   m_PrefabInstance: {fileID: 1206715581}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716522215}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc050ce38eb15ea468d2e808166f958e, type: 3}
@@ -3178,9 +3173,29 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1536796899583524376, guid: 2d38bb263a1af8e4c9210b62ffb27283, type: 3}
+      propertyPath: ManualOn
+      value: 
+      objectReference: {fileID: 21300000, guid: 88efec99695f5964cbc23354cb231dc3, type: 3}
+    - target: {fileID: 1536796899583524376, guid: 2d38bb263a1af8e4c9210b62ffb27283, type: 3}
+      propertyPath: ManualOff
+      value: 
+      objectReference: {fileID: 21300000, guid: 342db39f040a47d4ead0e93e7c924048, type: 3}
+    - target: {fileID: 1536796899583524376, guid: 2d38bb263a1af8e4c9210b62ffb27283, type: 3}
+      propertyPath: ManualButton
+      value: 
+      objectReference: {fileID: 1677194419}
+    - target: {fileID: 1536796899583524376, guid: 2d38bb263a1af8e4c9210b62ffb27283, type: 3}
       propertyPath: ovrCameraRig
       value: 
       objectReference: {fileID: 7079690332668728362}
+    - target: {fileID: 1536796899583524376, guid: 2d38bb263a1af8e4c9210b62ffb27283, type: 3}
+      propertyPath: machineCotroller
+      value: 
+      objectReference: {fileID: 1766914550}
+    - target: {fileID: 1536796899583524376, guid: 2d38bb263a1af8e4c9210b62ffb27283, type: 3}
+      propertyPath: position_anaunce
+      value: 
+      objectReference: {fileID: 759546480}
     - target: {fileID: 6311705801385079312, guid: 2d38bb263a1af8e4c9210b62ffb27283, type: 3}
       propertyPath: machineController
       value: 
@@ -3695,6 +3710,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7147530562734519491, guid: 2487a3ae4f1630d439ce4a3e9ac03c7b, type: 3}
   m_PrefabInstance: {fileID: 1668329298}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1677194419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7885694082670756260, guid: 2d38bb263a1af8e4c9210b62ffb27283, type: 3}
+  m_PrefabInstance: {fileID: 1265025309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1720463119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3807,21 +3827,6 @@ MonoBehaviour:
   step: 0
   state_copy: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   Nume: 0
---- !u!114 &1766914554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766914550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b49a93e7aaa6484c8722ab84ca14803, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  machineController: {fileID: 1766914550}
-  RollingMillmachine_workrollTop: {fileID: 1206715630}
-  RollingMillmachine_RollchangeCar: {fileID: 716522215}
 --- !u!1 &1770049854
 GameObject:
   m_ObjectHideFlags: 0
