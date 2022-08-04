@@ -26,6 +26,7 @@ public class ButtonController : MonoBehaviour
         redOff = new Color(0.5f, 0, 0, 0.5f);
         
         Toggle();
+        //StartLampTest();
     }
 
     public void Toggle()
@@ -57,5 +58,29 @@ public class ButtonController : MonoBehaviour
     public void setDeactivate()
     {
         isActivated = false;
+    }
+    
+    public void StartLampTest()
+    {
+        LampOn();
+        Invoke("LampOff", 1);
+    }
+
+    public void LampOn()
+    {
+        leftColorState.Color = greenOn;    
+        leftLED.InjectOptionalNormalColorState(leftColorState);
+
+        rightColorState.Color = redOn;
+        rightLED.InjectOptionalNormalColorState(rightColorState);
+    }
+
+    public void LampOff()
+    {
+        leftColorState.Color = greenOff;
+        leftLED.InjectOptionalNormalColorState(leftColorState);
+
+        rightColorState.Color = redOff;
+        rightLED.InjectOptionalNormalColorState(rightColorState);
     }
 }
