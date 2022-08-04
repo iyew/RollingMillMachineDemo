@@ -24,12 +24,7 @@ public class BackUpRoll : MonoBehaviour
     void Update()
     {
         topBurFlag = topBur.GetComponent<TopBurCollider>().y;
-        if (!isBalanceDown)
-        {
-            float step = speed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
-        }
-
+        
         if(topBurFlag == 1)
         {
             x = 2;

@@ -34,15 +34,17 @@ public class TXT_RealProcess : MonoBehaviour
         //Jog설치해서 취외
         "BUR CHange Clamp",                   //19 OUT JOG:
         "BUR Change Car Reverse",             //20 Out Jog
+        "RollChanage Car Reverse",            //21
 
         //Jig 설치 후 Top Back Up Roll 취외
-        "Crane Button: Zig Crane\nBack Up Roll 취외상태\nBottom Roll 위에 JIG설치 ",//21. Button 추가 
-        "BuR Change lever Forward",           //22. Top Back Up Roll 취외 TOP Back UP Roll 취외
-        "Back Up Roll Balance DOWN",          //23.
-        "Back Up Roll Change OUT",            //24
-        "Roll Cahnge Car Out",                //25
+        "Crane Button: Zig Crane\nBack Up Roll 취외상태\nBottom Roll 위에 JIG설치 ",//22. Button 추가 
+         "RollChanage Car Forward",           //23
+        "BuR Change lever Forward",           //24. Top Back Up Roll 취외 TOP Back UP Roll 취외
+        "Back Up Roll Balance DOWN",          //25.
+        "Back Up Roll Change OUT",            //26
+        "Roll Cahnge Car Out",                //27
 
-        "BuRCarane Button"                    //26. Top Back up Roll 취외 및 설치 준비
+        "BuRCarane Button"                    //28. Top Back up Roll 취외 및 설치 준비
      };
      void Update(){
         step = GameObject.Find("Txt_stepNum").GetComponent<TXT_StepNUM>().StepNumber;

@@ -61,15 +61,17 @@ public class Mode : MonoBehaviour
       //JOG
       else if(step==19 && state[ControlllerStep.BURC]    == ControlllerStep.Clamp)    flag = 1;
       else if(step==20 && state[ControlllerStep.BURCC]   == ControlllerStep.Reverse)  flag = 1;
+      else if (step==21 && state[ControlllerStep.RCC]   == ControlllerStep.Reverse)  flag = 1;
       //Jig 설치 후 Top Back Up Roll 취외
-      else if(step==21 && state[ControlllerStep.ZigCrane] == ControlllerStep.Mount)   flag = 1;
-      else if(step==22 && state[ControlllerStep.BURCC]   == ControlllerStep.Forward)  flag = 1;
+      else if(step==22 && state[ControlllerStep.ZigCrane] == ControlllerStep.Mount)   flag = 1;
+      else if (step==23 && state[ControlllerStep.RCC]    == ControlllerStep.Forward)  flag = 1;
+      else if(step==24 && state[ControlllerStep.BURCC]   == ControlllerStep.Forward)  flag = 1;
       //Top Back Up Roll 취외
-      else if(step==23 && state[ControlllerStep.BURBCY]   == ControlllerStep.Down)    flag = 1;
-      else if(step==24 && state[ControlllerStep.BURCC]   == ControlllerStep.Reverse)  flag = 1;
-      else if(step==25 && state[ControlllerStep.RCC]     == ControlllerStep.Reverse)  flag = 1;
+      else if(step==25 && state[ControlllerStep.BURBCY]   == ControlllerStep.Down)    flag = 1;
+      else if(step==26 && state[ControlllerStep.BURCC]   == ControlllerStep.Reverse)  flag = 1;
+      else if(step==27 && state[ControlllerStep.RCC]     == ControlllerStep.Reverse)  flag = 1;
       //Crane
-      else if(step==26 && state[ControlllerStep.BURCrane] == ControlllerStep.Mount)  {flag = 1; soundManager.play_Finish();}
+      else if(step==28 && state[ControlllerStep.BURCrane] == ControlllerStep.Mount)  {flag = 1; soundManager.play_Finish();}
       else{
         //Debug.Log("You Put Wron Number: " + "num-"+ Nume +  "Movement-" + state[Nume]);
         if(sound_flag==1)  {soundManager.play_Error(); sound_flag = 0;}

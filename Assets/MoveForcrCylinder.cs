@@ -20,7 +20,7 @@ public class MoveForcrCylinder : MonoBehaviour
 
         else if(flag == 2)
         {
-            transform.localPosition = new Vector3(x,y,z);
+           // transform.localPosition = new Vector3(x,y,z);
         }
 
     }
