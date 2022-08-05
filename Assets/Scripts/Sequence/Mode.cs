@@ -8,6 +8,8 @@ public class Mode : MonoBehaviour
   public SoundManager soundManager;
   public GameObject machineController;
   public GameObject Environment_light;
+  public GameObject Tool;
+  public GameObject tutorialPannel;
   public int step;
    
   int[] EducationStep;
@@ -17,7 +19,7 @@ public class Mode : MonoBehaviour
   public int Nume;
   int Action, flag=0, sound_flag=1; 
   int sum = 0;
-  private float time;
+  private float time, time_pannel;
 
   void Start(){
     step = 0;
@@ -77,14 +79,21 @@ public class Mode : MonoBehaviour
         if(sound_flag==1)  {soundManager.play_Error(); sound_flag = 0;}
                 
         time +=Time.deltaTime;
-        if(time<1.0f) {Environment_light.GetComponent<Light>().color = Color.red;}
+        if(time<1.0f) {
+          Environment_light.GetComponent<Light>().color = Color.red;
+          
+          if(Tool.GetComponent<ToolBarButton>().test == true){
+            tutorialPannel.SetActive(true);
+          }
+        }
         else {
+          tutorialPannel.SetActive(false);
           machineController.GetComponent<ControlllerStep>().action=0; time = 0.0f; 
           Environment_light.GetComponent<Light>().color = Color.white;
           Debug.Log(Nume+":"+state[Nume]+"->"+state_copy[Nume]);
           machineController.GetComponent<ControlllerStep>().State[Nume] = state_copy[Nume];
           sound_flag = 1;
-        } 
+        }
       }
 
       if(flag == 1){

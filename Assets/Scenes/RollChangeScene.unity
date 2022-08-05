@@ -748,6 +748,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 83275134805337916, guid: 81333091eee2a9343b687e3a8377a4de, type: 3}
   m_PrefabInstance: {fileID: 532800295}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &371411134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4799351857598270725, guid: 2d38bb263a1af8e4c9210b62ffb27283, type: 3}
+  m_PrefabInstance: {fileID: 1265025309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &425166824
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,7 +3283,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1536796899583524376, guid: 2d38bb263a1af8e4c9210b62ffb27283, type: 3}
   m_PrefabInstance: {fileID: 1265025309}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 371411134}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b868497637fe1b40aa7c51947b036ea, type: 3}
@@ -4044,6 +4049,8 @@ MonoBehaviour:
   soundManager: {fileID: 24105944}
   machineController: {fileID: 1766914550}
   Environment_light: {fileID: 1770049854}
+  Tool: {fileID: 371411134}
+  tutorialPannel: {fileID: 1855166046}
   step: 0
   state_copy: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   Nume: 0
@@ -4140,6 +4147,11 @@ Transform:
   m_Father: {fileID: 1314550837}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 48.47, y: 0.96, z: 0}
+--- !u!1 &1855166046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 992310724758196130, guid: 2d38bb263a1af8e4c9210b62ffb27283, type: 3}
+  m_PrefabInstance: {fileID: 1265025309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1855789810 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5704608227024474192, guid: 9aaebe254bd55db4f95a20dbc429532c, type: 3}

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ToolBarButton : MonoBehaviour
 {
-    bool              monitoring,       manual,         tutorial,         test;
+    public bool              monitoring,       manual,         tutorial,         test;
     public GameObject ovrCameraRig, tutorialPannel, machineCotroller, position_anaunce;
     public GameObject MonitoringButton, ManualButton,   TutorialButton,   TestButton;
     public Sprite     MonitoringOn,     ManualOn,       TutorialOn,       TestOn;
