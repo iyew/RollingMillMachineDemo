@@ -87,7 +87,9 @@ public class Mode : MonoBehaviour
           }
         }
         else {
-          tutorialPannel.SetActive(false);
+          if(Tool.GetComponent<ToolBarButton>().test == true){
+            tutorialPannel.SetActive(false);
+          }
           machineController.GetComponent<ControlllerStep>().action=0; time = 0.0f; 
           Environment_light.GetComponent<Light>().color = Color.white;
           Debug.Log(Nume+":"+state[Nume]+"->"+state_copy[Nume]);
