@@ -19,7 +19,7 @@ public class BURCylinder : MonoBehaviour
         target = transform;
         speed = 1.5f;
         flag = 0;
-        power = 1;
+        power = 5;
         collisionFlag = 0;
     }
 
@@ -41,7 +41,7 @@ public class BURCylinder : MonoBehaviour
 
         else if(flag == 2)
         {
-            burCylinder.AddForce(Vector3.right*power);
+            burCylinder.velocity(Vector3.right*power);
             if( posX > forward.transform.position.x)
             {
                 burCylinder.velocity = Vector3.zero;
@@ -78,13 +78,13 @@ public class BURCylinder : MonoBehaviour
         if(collisionFlag == 1)
         {
         backUpRollBottom.SetParent(this.transform);
-        backUpRollBottom.GetComponent<BackUpRoll>().isBalanceDown = true;
+        //backUpRollBottom.GetComponent<BackUpRoll>().isBalanceDown = true;
         }    
     }
 
     public void UnClamp()
     {
         backUpRollBottom.SetParent(null);
-        backUpRollBottom.GetComponent<BackUpRoll>().isBalanceDown = true;
+        //backUpRollBottom.GetComponent<BackUpRoll>().isBalanceDown = true;
     }
 }
