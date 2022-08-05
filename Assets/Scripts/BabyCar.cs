@@ -12,6 +12,7 @@ public class BabyCar : MonoBehaviour
     public Rigidbody babyCar;
     public float power;
     public int collisionFlag;
+    public GameObject childrenBaby;
 
     protected void Start()
     {
@@ -30,6 +31,7 @@ public class BabyCar : MonoBehaviour
         var y2 = babyCar.transform.localPosition.y;
         var z2 = babyCar.transform.localPosition.z;
         var posX = babyCar.transform.position.x;
+        collisionFlag = childrenBaby.GetComponent<BabyCarCollisionTrigger>().collisionFlag;
         
 
         if(flag == 1)
@@ -78,7 +80,7 @@ public class BabyCar : MonoBehaviour
         {
         workRollTop.SetParent(this.transform);
         workRollBottom.SetParent(this.transform);
-        workRollTop.GetComponent<WorkRoll>().isBalanceDown = true;
+        workRollTop.GetComponent<WorkRoll>().isBalanceDown = true;  
         workRollBottom.GetComponent<WorkRoll>().isBalanceDown = true;
         }
     }
@@ -91,11 +93,5 @@ public class BabyCar : MonoBehaviour
         workRollBottom.GetComponent<WorkRoll>().isBalanceDown = true;
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        if(other.name == "roll-s:1")
-        {
-            collisionFlag = 1;
-        }
-    }
+    
 }
