@@ -74,6 +74,7 @@ public class Mode : MonoBehaviour
       else if(step==27 && state[ControlllerStep.RCC]     == ControlllerStep.Reverse)  flag = 1;
       //Crane
       else if(step==28 && state[ControlllerStep.BURCrane] == ControlllerStep.Mount)  {soundManager.play_Finish(); step++;}
+      else if(step==29){}
       else{
         //Debug.Log("You Put Wron Number: " + "num-"+ Nume +  "Movement-" + state[Nume]);
         if(sound_flag==1)  {soundManager.play_Error(); sound_flag = 0;}
