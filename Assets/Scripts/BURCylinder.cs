@@ -41,7 +41,7 @@ public class BURCylinder : MonoBehaviour
 
         else if(flag == 2)
         {
-            burCylinder.MovePosition(Vector3.right*power);
+            burCylinder.AddForce(Vector3.right*power,ForceMode.Acceleration);
             if( posX > forward.transform.position.x)
             {
                 burCylinder.velocity = Vector3.zero;
