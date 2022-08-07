@@ -19,7 +19,7 @@ public class BURCylinder : MonoBehaviour
         target = transform;
         speed = 1.5f;
         flag = 0;
-        power = 5;
+        power = 2;
         collisionFlag = 0;
     }
 
@@ -46,6 +46,7 @@ public class BURCylinder : MonoBehaviour
             {
                 burCylinder.velocity = Vector3.zero;
             }
+            //transform.position = Vector3.MoveTowards(transform.position,forward.position,step);
             
         }   
     }
