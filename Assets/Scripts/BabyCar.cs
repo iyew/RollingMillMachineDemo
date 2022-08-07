@@ -13,7 +13,8 @@ public class BabyCar : MonoBehaviour
     public float power;
     public int collisionFlag;
     public GameObject childrenBaby;
-
+    public GameObject chock;
+    public int chockFlag;
     protected void Start()
     {
         target = transform;
@@ -21,6 +22,7 @@ public class BabyCar : MonoBehaviour
         flag = 0;
         power = 1;
         collisionFlag = 0;
+        chockFlag = 0;
     }
 
     protected void Update()
@@ -32,12 +34,29 @@ public class BabyCar : MonoBehaviour
         var z2 = babyCar.transform.localPosition.z;
         var posX = babyCar.transform.position.x;
         collisionFlag = childrenBaby.GetComponent<BabyCarCollisionTrigger>().collisionFlag;
+        chockFlag = chock.GetComponent<ChckTrigger>().chockflag;
+        
         
 
         if(flag == 1)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
-            flag = 0;
+            if(collisionFlag == 0)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+                flag = 0;
+            }
+            else if(collisionFlag == 1)
+            {
+                if(chockFlag == -1)
+                {
+
+                }
+                else if(collisionFlag == 1)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+                    flag = 0;
+                }
+            }
         }
 
         else if(flag == 2)
