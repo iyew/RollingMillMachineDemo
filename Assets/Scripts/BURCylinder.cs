@@ -13,13 +13,15 @@ public class BURCylinder : MonoBehaviour
     public float power;
     public int collisionFlag;
     public GameObject cylinderChildren;
+    public GameObject burChock;
+    public int burChockflag;
 
     protected void Start()
     {
         target = transform;
         speed = 1.5f;
         flag = 0;
-        power = 2;
+        power = 500;
         collisionFlag = 0;
     }
 
@@ -31,17 +33,36 @@ public class BURCylinder : MonoBehaviour
         var z2 = burCylinder.transform.localPosition.z;
         var posX = burCylinder.transform.position.x;
         collisionFlag = cylinderChildren.GetComponent<ButtomBurClampCollision>().collisionFlag;
+        burChockflag = burChock.GetComponent<BurChockFlag>().chockflag;
+
         
 
         if(flag == 1)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
-            flag = 0;
+            if(collisionFlag == 0)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+                flag = 0;
+            }
+
+            else if(collisionFlag == 1)
+            {
+                if(burChockflag == -1)
+                {
+
+                }
+
+                else if(burChockflag == 1)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+                    flag = 0;
+                }
+            }
         }
 
         else if(flag == 2)
         {
-            burCylinder.AddForce(Vector3.right*power,ForceMode.Acceleration);
+            burCylinder.AddForce(Vector3.right*power);
             if( posX > forward.transform.position.x)
             {
                 burCylinder.velocity = Vector3.zero;
