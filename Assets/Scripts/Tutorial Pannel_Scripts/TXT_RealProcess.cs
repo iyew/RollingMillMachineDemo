@@ -33,7 +33,7 @@ public class TXT_RealProcess : MonoBehaviour
         "Back Up Roll Change Car Forward\n(Buttom Back Up Roll 빼낼 차1 앞으로)",    //17
         "Back Up Roll Change Cylinder Forword\n(Buttom Back Up Roll 빼낼 실린더 앞으로)",    //18
         //Jog설치해서 취외
-        "Back Up Roll Change Clamp\n(몰라)",                   //19 OUT JOG:
+        "Back Up Roll Change Clamp\n(Bottom Back Up Roll과 Back Up Roll 실린더 연결)",                   //19 OUT JOG:
         "Back Up Roll Change Car Reverse\n(Buttom Back up Roll 빼낸 실린더 원 위치로)",             //20 Out Jog
         "Roll Chanage Car Reverse\n(Buttom Back Up Roll 빼낸 차1 원 위치로)",            //21
 
